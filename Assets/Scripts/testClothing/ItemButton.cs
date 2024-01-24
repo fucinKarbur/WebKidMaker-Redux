@@ -1,0 +1,40 @@
+using System;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+[RequireComponent(typeof(Button))]
+public class ItemButton : MonoBehaviour
+{
+    [SerializeField] private ClearButton _clearButton;
+    [SerializeField] private ItemData _item;
+    [SerializeField] private Image _icon;
+    [SerializeField] private ClothContainer _container;
+    [SerializeField] private ClothTemplate _template;
+
+    private Button _button;
+
+    private void Awake()
+    {
+        _button = GetComponent<Button>();
+        _icon.sprite = _item.Icon;
+    }
+
+    private void OnEnable()
+    {
+        _button.onClick.AddListener(Spawn);
+    }
+
+    private void OnDisable()
+    {
+        _button.onClick.RemoveListener(Spawn);
+    }
+
+    public void Spawn()
+    {
+        _clearButton.Clear();
+
+        var spawned = Instantiate(_template, _container.transform.position, Quaternion.identity, _container.transform);
+        spawned.SetImage(_item.Icon);
+    }
+}
