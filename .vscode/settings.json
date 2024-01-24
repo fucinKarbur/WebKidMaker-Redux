@@ -1,0 +1,9 @@
+{
+    "editor.defaultFormatter": "ms-dotnettools.csdevkit",
+    "vstuc.refreshOnSave": false,
+    "unity-code-snippets.style": "allman",
+    "dotnet.preferCSharpExtension": true,
+    "[csharp]": {
+        "editor.defaultFormatter": "ms-dotnettools.csharp"
+    }
+}

@@ -11,8 +11,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - SubWindow
+  - KidWindow
   - 
   - 
   - 
@@ -40,4 +40,10 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: exe
+    uniqueID: 788037647
+    locked: 0
+  - name: window
+    uniqueID: 1917724303
     locked: 0
