@@ -1,60 +1,75 @@
 using System.Collections.Generic;
-using System.Linq;
-using Unity.VisualScripting;
-using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.Rendering;
+using UnityEngine.UI;
+using System.Linq;
+using UnityEngine;
 
-[RequireComponent(typeof(RectTransform))]
-public class DraggableObject : MonoBehaviour, IDragHandler, IBeginDragHandler
+namespace WKMR
 {
-    [SerializeField] private Canvas _canvas;
-    [SerializeField] private GameObject _parent;
-
-    private RectTransform _transform;
-
-    public SortingGroup Group { get; private set; }
-
-    private void Awake()
+    [RequireComponent(typeof(RectTransform))]
+    public class DraggableObject : MonoBehaviour, IDragHandler, IBeginDragHandler, IEndDragHandler
     {
-        _transform = _parent == null ?
-           GetComponent<RectTransform>() :
-           _parent.GetComponent<RectTransform>();
+        [SerializeField] private Canvas _canvas;
+        [SerializeField] private GameObject _parent;
+        [SerializeField] private Material _material;
+        [SerializeField] private Image _image;
 
-        SetGroup();
-    }
+        private RectTransform _transform;
 
-    public void OnBeginDrag(PointerEventData eventData)
-    {
-        List<DraggableObject> others = FindObjectsOfType<DraggableObject>().
-        Where(other => other.Group.sortingLayerName == Group.sortingLayerName).ToList();
+        public SortingGroup Group { get; private set; }
 
-        Debug.Log(FindObjectsOfType<DraggableObject>().Length);
-        
-        int highestSiblingIndex = 0;
-        foreach (var draggable in others)
+        private void Awake()
         {
-            int siblingIndex = draggable.transform.GetSiblingIndex();
-            if (siblingIndex > highestSiblingIndex)
-                highestSiblingIndex = siblingIndex;
+            _transform = _parent == null ?
+               GetComponent<RectTransform>() :
+               _parent.GetComponent<RectTransform>();
+
+            SetGroup();
         }
 
-        // Set the sibling index of the current draggable object to be higher than the highest sibling index
-        _transform.SetSiblingIndex(highestSiblingIndex + 1);
-    }
+        public void OnBeginDrag(PointerEventData eventData)
+        {
+            SetOrder();
+            SetMaterial(_material);
+        }
 
-    public void OnDrag(PointerEventData eventData)
-    {
-        _transform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
-    }
+        public void OnDrag(PointerEventData eventData) => _transform.anchoredPosition += eventData.delta / _canvas.scaleFactor;
 
-    private void SetGroup()
-    {
-        if (_transform.GetComponent<SortingGroup>() == null)
-            _transform.AddComponent<SortingGroup>();
+        public void OnEndDrag(PointerEventData eventData) => SetMaterial();
 
-        Group = _transform.GetComponent<SortingGroup>();
-        Group.sortingLayerName = _transform.TryGetComponent(out Shortcut _) ?
-         "exe" : "window";
+        private void SetGroup()
+        {
+            if (_transform.GetComponent<SortingGroup>() == null)
+                _transform.gameObject.AddComponent<SortingGroup>();
+
+            Group = _transform.GetComponent<SortingGroup>();
+            Group.sortingLayerName = _transform.TryGetComponent(out Shortcut _) ?
+             "exe" : "window";
+        }
+
+        private void SetOrder()
+        {
+            List<DraggableObject> others = FindObjectsOfType<DraggableObject>().
+                    Where(other => other.Group.sortingLayerName == Group.sortingLayerName).ToList();
+
+            int highestSiblingIndex = 0;
+
+            foreach (var draggable in others)
+            {
+                int siblingIndex = draggable.transform.GetSiblingIndex();
+
+                if (siblingIndex > highestSiblingIndex)
+                    highestSiblingIndex = siblingIndex;
+            }
+
+            _transform.SetSiblingIndex(highestSiblingIndex + 1);
+        }
+
+        private void SetMaterial(Material material = null)
+        {
+            if (_image != null)
+                _image.material = material;
+        }
     }
 }

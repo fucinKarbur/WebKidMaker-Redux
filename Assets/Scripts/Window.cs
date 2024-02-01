@@ -1,18 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Window : MonoBehaviour
+namespace WKMR
 {
-    // Start is called before the first frame update
-    void Start()
+    public class Window : MonoBehaviour
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

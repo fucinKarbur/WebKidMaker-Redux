@@ -1,25 +1,21 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
-[RequireComponent(typeof(RectTransform))]
-public class ClothTemplate : MonoBehaviour
+namespace WKMR
 {
-    public Image Image { get; private set; }
-
-    private void Awake()
+    [RequireComponent(typeof(Image))]
+    public class ClothTemplate : MonoBehaviour
     {
-        Image = GetComponent<Image>();
-    }
+        public Image Image { get; private set; }
 
-    public void SetImage(Sprite sprite)
-    {
-        Image.sprite = sprite;
-        Image.SetNativeSize();
-    }
+        private void Awake() => Image = GetComponent<Image>();
 
-    public void SetColor(Color color)
-    {
-        Image.color = color;
+        public void SetImage(Sprite sprite)
+        {
+            Image.sprite = sprite;
+            Image.SetNativeSize();
+        }
+
+        public void SetColor(Color color) => Image.color = color;
     }
 }

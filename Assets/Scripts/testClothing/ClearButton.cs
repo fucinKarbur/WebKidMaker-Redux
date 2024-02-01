@@ -1,14 +1,16 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ClearButton : MonoBehaviour
+namespace WKMR
 {
-    [SerializeField] private List<ClothContainer> _containers;
-
-    public void Clear()
+    public class ClearButton : MonoBehaviour
     {
-        foreach (var container in _containers)
-            container.Reset();
+        [SerializeField] private List<ClothContainer> _containers;
+
+        public void Clear()
+        {
+            foreach (var container in _containers)
+                container.Reset();
+        }
     }
 }

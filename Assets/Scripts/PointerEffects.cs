@@ -1,57 +1,58 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class PointerEffects : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerUpHandler
+namespace WKMR
 {
-    [SerializeField] private bool _changeSize = false;
-
-    private Vector3 _defaultSize;
-    private Vector3 _increaseSize = new(.1f, .1f);
-
-    private void Awake()
+    public class PointerEffects : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerUpHandler
     {
-        _defaultSize = transform.localScale;
-    }
+        [SerializeField] private bool _changeSize = false;
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
+        private Vector3 _defaultSize;
+        private Vector3 _increaseSize = new(.1f, .1f);
+
+        private void Awake()
+        {
+            _defaultSize = transform.localScale;
+        }
+
+        public void OnPointerEnter(PointerEventData eventData)
+        {
 #if UNITY_STANDALONE || UNITY_EDITOR
-        IncreaseSize();
+            IncreaseSize();
 #endif
-    }
+        }
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
+        public void OnPointerExit(PointerEventData eventData)
+        {
 #if UNITY_STANDALONE || UNITY_EDITOR
-        SetDefaultSize();
+            SetDefaultSize();
 #endif
-    }
+        }
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
+        public void OnPointerClick(PointerEventData eventData)
+        {
 #if UNITY_STANDALONE == false || UNITY_EDITOR == false
-        IncreaseSize();
+            IncreaseSize();
 #endif
-    }
+        }
 
-    public void OnPointerUp(PointerEventData eventData)
-    {
+        public void OnPointerUp(PointerEventData eventData)
+        {
 #if UNITY_STANDALONE == false || UNITY_EDITOR == false
-        SetDefaultSize();
+            SetDefaultSize();
 #endif
-    }
+        }
 
-    private void IncreaseSize()
-    {
-        if (_changeSize)
-            transform.localScale += _increaseSize;
-    }
+        private void IncreaseSize()
+        {
+            if (_changeSize)
+                transform.localScale += _increaseSize;
+        }
 
-    private void SetDefaultSize()
-    {
-        if (_changeSize)
-            transform.localScale = _defaultSize;
+        private void SetDefaultSize()
+        {
+            if (_changeSize)
+                transform.localScale = _defaultSize;
+        }
     }
 }

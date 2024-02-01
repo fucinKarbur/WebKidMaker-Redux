@@ -5,5 +5,8 @@
     "dotnet.preferCSharpExtension": true,
     "[csharp]": {
         "editor.defaultFormatter": "ms-dotnettools.csharp"
+    },
+    "files.exclude": {
+        "**/*.meta": true
     }
 }

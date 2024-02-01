@@ -1,7 +1,8 @@
 using UnityEngine;
-using TMPro;
 
-public class PageControl : MonoBehaviour
+namespace WKMR
 {
-    
+    public class PageControl : MonoBehaviour
+    {
+    }
 }

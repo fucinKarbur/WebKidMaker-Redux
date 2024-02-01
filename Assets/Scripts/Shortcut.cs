@@ -1,16 +1,19 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class Shortcut : MonoBehaviour, IPointerClickHandler
+namespace WKMR
 {
-    [SerializeField] private Window _window;
-
-    private bool IsOpen => _window.gameObject.activeSelf;
-
-    public void OnPointerClick(PointerEventData eventData)
+    public class Shortcut : MonoBehaviour, IPointerClickHandler
     {
-        if (eventData.dragging == false)
-            if (IsOpen == false)
-                _window.gameObject.SetActive(true);
+        [SerializeField] private Window _window;
+
+        private bool IsOpen => _window.gameObject.activeSelf;
+
+        public void OnPointerClick(PointerEventData eventData)
+        {
+            if (eventData.dragging == false)
+                if (IsOpen == false)
+                    _window.gameObject.SetActive(true);
+        }
     }
 }

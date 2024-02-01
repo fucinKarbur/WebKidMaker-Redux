@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_3"
+      name: 1
       rect:
         serializedVersion: 2
         x: 27
@@ -131,7 +131,7 @@ TextureImporter:
         width: 113
         height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_5"
+      name: 2
       rect:
         serializedVersion: 2
         x: 297
@@ -152,7 +152,7 @@ TextureImporter:
         width: 138
         height: 167
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_6"
+      name: 11
       rect:
         serializedVersion: 2
         x: 575
@@ -173,7 +173,7 @@ TextureImporter:
         width: 105
         height: 220
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_7"
+      name: 12
       rect:
         serializedVersion: 2
         x: 835
@@ -194,7 +194,7 @@ TextureImporter:
         width: 132
         height: 217
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_9"
+      name: 20
       rect:
         serializedVersion: 2
         x: 1380
@@ -215,7 +215,7 @@ TextureImporter:
         width: 101
         height: 558
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_10"
+      name: 21
       rect:
         serializedVersion: 2
         x: 1582
@@ -236,7 +236,7 @@ TextureImporter:
         width: 64
         height: 613
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_11"
+      name: 22
       rect:
         serializedVersion: 2
         x: 1812
@@ -257,7 +257,7 @@ TextureImporter:
         width: 100
         height: 673
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_13"
+      name: 24
       rect:
         serializedVersion: 2
         x: 2290
@@ -278,7 +278,7 @@ TextureImporter:
         width: 171
         height: 812
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_22"
+      name: 3
       rect:
         serializedVersion: 2
         x: 45
@@ -299,7 +299,7 @@ TextureImporter:
         width: 125
         height: 110
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_24"
+      name: 4
       rect:
         serializedVersion: 2
         x: 322
@@ -320,7 +320,7 @@ TextureImporter:
         width: 158
         height: 83
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_25"
+      name: 9
       rect:
         serializedVersion: 2
         x: 622
@@ -341,7 +341,7 @@ TextureImporter:
         width: 94
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_26"
+      name: 10
       rect:
         serializedVersion: 2
         x: 847
@@ -362,7 +362,7 @@ TextureImporter:
         width: 135
         height: 150
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_27"
+      name: 19
       rect:
         serializedVersion: 2
         x: 1147
@@ -383,7 +383,7 @@ TextureImporter:
         width: 75
         height: 561
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_29"
+      name: 23
       rect:
         serializedVersion: 2
         x: 2016
@@ -404,7 +404,7 @@ TextureImporter:
         width: 114
         height: 802
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_32"
+      name: 8
       rect:
         serializedVersion: 2
         x: 904
@@ -425,7 +425,7 @@ TextureImporter:
         width: 126
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -438,15 +438,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_35"
+      name: 13
       rect:
         serializedVersion: 2
-        x: 1147
-        y: 67
+        x: 1145
+        y: 69
         width: 83
         height: 353
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_36"
+      name: 14
       rect:
         serializedVersion: 2
         x: 1361
@@ -467,7 +467,7 @@ TextureImporter:
         width: 148
         height: 331
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -480,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_37"
+      name: 15
       rect:
         serializedVersion: 2
         x: 1617
@@ -488,7 +488,7 @@ TextureImporter:
         width: 90
         height: 291
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_38"
+      name: 16
       rect:
         serializedVersion: 2
         x: 1867
@@ -509,7 +509,7 @@ TextureImporter:
         width: 107
         height: 283
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_39"
+      name: 17
       rect:
         serializedVersion: 2
         x: 2085
@@ -530,7 +530,7 @@ TextureImporter:
         width: 67
         height: 336
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_40"
+      name: 18
       rect:
         serializedVersion: 2
         x: 2306
@@ -551,7 +551,7 @@ TextureImporter:
         width: 119
         height: 367
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -564,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_0"
+      name: 7
       rect:
         serializedVersion: 2
         x: 622
@@ -572,7 +572,7 @@ TextureImporter:
         width: 126
         height: 145
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -585,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_1"
+      name: 6
       rect:
         serializedVersion: 2
         x: 327
@@ -593,7 +593,7 @@ TextureImporter:
         width: 121
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_2"
+      name: 5
       rect:
         serializedVersion: 2
         x: 55
@@ -614,7 +614,7 @@ TextureImporter:
         width: 121
         height: 90
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -637,52 +637,52 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_0": -91906634
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_1": 867110382
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_10": 810725039
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_11": -791757675
+      1: 674291292
+      10: -862806348
+      11: 1794700351
+      12: 340068245
+      13: -535146996
+      14: 701257248
+      15: 229103773
+      16: -691398857
+      17: -813158734
+      18: 835617648
+      19: -999108825
+      2: 100196091
+      20: -747856384
+      21: 810725039
+      22: -791757675
+      23: 450242163
+      24: -1685127158
+      3: 2052296442
+      4: 801265199
+      5: 116169186
+      6: 867110382
+      7: -91906634
+      8: -1356646994
+      9: -1484396434
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_12": 1123106514
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_13": -1685127158
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_14": 73049779
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_15": -1425826908
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_16": -806301201
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_17": 1390705571
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_18": -1514157366
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_19": -1602741385
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_2": 116169186
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_20": -3377763
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_21": 1442413124
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_22": 2052296442
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_23": 1538471114
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_24": 801265199
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_25": -1484396434
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_26": -862806348
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_27": -999108825
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_28": -1912727494
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_29": 450242163
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_3": 674291292
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_30": 1840196356
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_31": -2147327300
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_32": -1356646994
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_33": 1401379001
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_34": -1761799136
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_35": -535146996
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_36": 701257248
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_37": 229103773
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_38": -691398857
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_39": -813158734
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_4": -1670454773
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_40": 835617648
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_41": 1719621212
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_42": -1978239793
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_43": 1231937802
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_44": 2144206227
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_45": -1456128332
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_5": 100196091
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_6": 1794700351
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_7": 340068245
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_8": 1487771609
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0445\u0432\u043E\u0441\u0442\u044B_9": -747856384
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -123,7 +123,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_14"
+      name: 22
       rect:
         serializedVersion: 2
         x: 1275
@@ -144,7 +144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_15"
+      name: 9
       rect:
         serializedVersion: 2
         x: 1942
@@ -165,7 +165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_18"
+      name: 0
       rect:
         serializedVersion: 2
         x: 486
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_20"
+      name: 00
       rect:
         serializedVersion: 2
         x: 631
@@ -207,7 +207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_21"
+      name: 1
       rect:
         serializedVersion: 2
         x: 822
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_22"
+      name: 3
       rect:
         serializedVersion: 2
         x: 932
@@ -249,7 +249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_23"
+      name: 4
       rect:
         serializedVersion: 2
         x: 1149
@@ -270,7 +270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_24"
+      name: 6
       rect:
         serializedVersion: 2
         x: 1455
@@ -291,7 +291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_25"
+      name: 7
       rect:
         serializedVersion: 2
         x: 1569
@@ -312,7 +312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_26"
+      name: 8
       rect:
         serializedVersion: 2
         x: 1822
@@ -333,7 +333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_27"
+      name: 10
       rect:
         serializedVersion: 2
         x: 2151
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_28"
+      name: 11
       rect:
         serializedVersion: 2
         x: 2282
@@ -375,7 +375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_39"
+      name: 12
       rect:
         serializedVersion: 2
         x: 525
@@ -396,7 +396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_40"
+      name: 13
       rect:
         serializedVersion: 2
         x: 686
@@ -417,7 +417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_41"
+      name: 14
       rect:
         serializedVersion: 2
         x: 885
@@ -438,7 +438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_42"
+      name: 15
       rect:
         serializedVersion: 2
         x: 1012
@@ -459,7 +459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_43"
+      name: 16
       rect:
         serializedVersion: 2
         x: 1145
@@ -480,7 +480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_44"
+      name: 17
       rect:
         serializedVersion: 2
         x: 1297
@@ -501,7 +501,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_45"
+      name: 18
       rect:
         serializedVersion: 2
         x: 1467
@@ -522,7 +522,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_46"
+      name: 19
       rect:
         serializedVersion: 2
         x: 1587
@@ -543,7 +543,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_47"
+      name: 20
       rect:
         serializedVersion: 2
         x: 1722
@@ -564,7 +564,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_48"
+      name: 21
       rect:
         serializedVersion: 2
         x: 1852
@@ -585,7 +585,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_49"
+      name: 2
       rect:
         serializedVersion: 2
         x: 1992
@@ -606,7 +606,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_50"
+      name: 23
       rect:
         serializedVersion: 2
         x: 2120
@@ -627,7 +627,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_52"
+      name: 24
       rect:
         serializedVersion: 2
         x: 555
@@ -648,10 +648,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_53"
+      name: 25
       rect:
         serializedVersion: 2
-        x: 690
+        x: 688
         y: 280
         width: 115
         height: 145
@@ -669,7 +669,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_54"
+      name: 26
       rect:
         serializedVersion: 2
         x: 886
@@ -690,7 +690,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_55"
+      name: 27
       rect:
         serializedVersion: 2
         x: 1040
@@ -711,7 +711,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_56"
+      name: 28
       rect:
         serializedVersion: 2
         x: 1239
@@ -732,7 +732,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_57"
+      name: 29
       rect:
         serializedVersion: 2
         x: 1366
@@ -753,7 +753,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_58"
+      name: 30
       rect:
         serializedVersion: 2
         x: 1549
@@ -774,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_59"
+      name: 31
       rect:
         serializedVersion: 2
         x: 1665
@@ -795,7 +795,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_60"
+      name: 32
       rect:
         serializedVersion: 2
         x: 1842
@@ -816,7 +816,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_61"
+      name: 33
       rect:
         serializedVersion: 2
         x: 1995
@@ -837,7 +837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_62"
+      name: 34
       rect:
         serializedVersion: 2
         x: 2182
@@ -858,7 +858,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_63"
+      name: 35
       rect:
         serializedVersion: 2
         x: 2376
@@ -889,28 +889,48 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_0": -275368587
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_1": 2008652919
+      0: 993957605
+      00: -1269590773
+      1: 1116968174
+      10: 2028847078
+      11: 2142255389
+      12: -1067659674
+      13: -1698974954
+      14: -12554898
+      15: 273516252
+      16: 919818957
+      17: -1593072975
+      18: 1398249057
+      19: -540454034
+      2: 978574185
+      20: -1954634478
+      21: 545233748
+      22: -1329183317
+      23: 1280461141
+      24: -765401506
+      25: 251325906
+      26: -1964533454
+      27: -517834301
+      28: -553907553
+      29: 544362399
+      3: -965750492
+      30: 548704513
+      31: -1401098955
+      32: 1770428280
+      33: -386101845
+      34: 1947559203
+      35: -254487345
+      4: -1823729278
+      6: 244576502
+      7: 1100162711
+      8: 895788036
+      9: -1874193398
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_10": 577257382
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_11": 1857480991
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_12": -928093094
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_13": 395952221
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_14": -1329183317
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_15": -1874193398
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_16": 20780503
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_17": 1326449873
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_18": 993957605
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_19": 1658258326
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_2": 1997180533
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_20": -1269590773
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_21": 1116968174
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_22": -965750492
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_23": -1823729278
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_24": 244576502
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_25": 1100162711
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_26": 895788036
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_27": 2028847078
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_28": 2142255389
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_29": 858150140
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_3": 1978136014
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_30": 650019196
@@ -922,34 +942,10 @@ TextureImporter:
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_36": -1706304653
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_37": -1206707808
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_38": -1906272436
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_39": -1067659674
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_4": 1612234416
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_40": -1698974954
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_41": -12554898
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_42": 273516252
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_43": 919818957
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_44": -1593072975
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_45": 1398249057
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_46": -540454034
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_47": -1954634478
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_48": 545233748
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_49": 978574185
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_5": 1450415116
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_50": 1280461141
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_51": 1506529171
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_52": -765401506
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_53": 251325906
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_54": -1964533454
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_55": -517834301
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_56": -553907553
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_57": 544362399
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_58": 548704513
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_59": -1401098955
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_6": 1415738818
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_60": 1770428280
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_61": -386101845
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_62": 1947559203
-      "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_63": -254487345
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_64": -689399794
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_65": 1654937173
       "\u0432\u043E\u043B\u043E\u0441\u044B-\u0441\u043E\u0441\u0443\u043B\u043A\u0438_66": 538719729

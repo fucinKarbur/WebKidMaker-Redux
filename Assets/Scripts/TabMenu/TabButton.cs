@@ -2,34 +2,28 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Image))]
-public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
+namespace WKMR
 {
-    [SerializeField] private PageGroup _pageGroup;
-
-    private TabGroup _group;
-
-    public Image Background { get; private set; }
-    public PageGroup PageGroup => _pageGroup;
-
-    private void Awake()
+    [RequireComponent(typeof(Image))]
+    public class TabButton : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
     {
-        Background = GetComponent<Image>();
-        _group = GetComponentInParent<TabGroup>();
-    }
+        [SerializeField] private PageGroup _pageGroup;
 
-    public void OnPointerClick(PointerEventData eventData)
-    {
-        _group.OnSelected(this);
-    }
+        private TabGroup _group;
 
-    public void OnPointerEnter(PointerEventData eventData)
-    {
-        _group.OnEnter(this);
-    }
+        public Image Background { get; private set; }
+        public PageGroup PageGroup => _pageGroup;
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        _group.OnExit();
+        private void Awake()
+        {
+            Background = GetComponent<Image>();
+            _group = GetComponentInParent<TabGroup>();
+        }
+
+        public void OnPointerClick(PointerEventData eventData) => _group.OnSelected(this);
+
+        public void OnPointerEnter(PointerEventData eventData) => _group.OnEnter(this);
+
+        public void OnPointerExit(PointerEventData eventData) => _group.OnExit();
     }
 }

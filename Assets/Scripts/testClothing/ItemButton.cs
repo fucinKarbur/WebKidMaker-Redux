@@ -2,49 +2,61 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-[RequireComponent(typeof(Button))]
-public class ItemButton : MonoBehaviour
+namespace WKMR
 {
-    [SerializeField] private Palette _palette;
-    [SerializeField] private ClearButton _clearButton;
-    [SerializeField] private ItemData _item;
-    [SerializeField] private Image _icon;
-    [SerializeField] private ClothContainer _container;
-    [SerializeField] private ClothTemplate _template;
-
-    private Button _button;
-
-    private void Awake()
+    [RequireComponent(typeof(Button))]
+    [RequireComponent(typeof(Image))]
+    public class ItemButton : MonoBehaviour
     {
-        _button = GetComponent<Button>();
-        _icon.sprite = _item.Icon;
-    }
+        [SerializeField] private Palette _palette;
+        [SerializeField] private ClearButton _clearButton;
+        [SerializeField] private ItemData _item;
+        [SerializeField] private ClothContainer _container;
+        [SerializeField] private ClothTemplate _template;
 
-    private void OnEnable() => _button.onClick.AddListener(Spawn);
+        private Image _icon;
+        private Button _button;
 
-    private void OnDisable() => _button.onClick.RemoveListener(Spawn);
-
-    public void Spawn()
-    {
-        _clearButton.Clear();
-
-        var spawned = Instantiate(_template, _container.transform.position, Quaternion.identity, _container.transform);
-
-        spawned.SetImage(_item.Icon);
-        TryToColor(spawned);
-    }
-
-    public void TryToColor(ClothTemplate template)
-    {
-        if (_item.Colorable && _palette != null)
+        private void Awake()
         {
-            _palette.gameObject.SetActive(true);
-            EventSystem.current.SetSelectedGameObject(_palette.gameObject);
-            _palette.ColorSend += template.SetColor;
+            _icon = GetComponent<Image>();
+            _button = GetComponent<Button>();
+
+            _icon.sprite = _item.Icon;
         }
-        else
+
+        private void OnEnable() => _button.onClick.AddListener(Spawn);
+
+        private void OnDisable() => _button.onClick.RemoveListener(Spawn);
+
+        public void Spawn()
         {
-            return;
+            _clearButton.Clear();
+
+            var spawned = Instantiate(_template, _container.transform.position, Quaternion.identity, _container.transform);
+            SetItem(spawned);
+        }
+
+        private void SetItem(ClothTemplate spawned)
+        {
+            spawned.SetImage(_item.Icon);
+            spawned.gameObject.name = _item.name;
+            spawned.transform.localPosition += _item.Offset;
+            TryToColor(spawned);
+        }
+
+        private void TryToColor(ClothTemplate template)
+        {
+            if (_item.Colorable && _palette != null)
+            {
+                _palette.gameObject.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(_palette.gameObject);
+                _palette.ColorSend += template.SetColor;
+            }
+            else
+            {
+                return;
+            }
         }
     }
 }

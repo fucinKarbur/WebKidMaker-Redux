@@ -1,65 +1,68 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TabGroup : MonoBehaviour
+namespace WKMR
 {
-    [SerializeField] private List<TabButton> _buttons = new();
-    [SerializeField] private Material _selected;
-    [SerializeField] private Material _hovered;
-
-    private List<PageGroup> _tabsContent = new();
-
-    private TabButton _current;
-
-    private void Start()
+    public class TabGroup : MonoBehaviour
     {
-        foreach(var tab in _buttons)
-        _tabsContent.Add(tab.PageGroup);
+        [SerializeField] private List<TabButton> _buttons = new();
+        [SerializeField] private Material _selected;
+        [SerializeField] private Material _hovered;
 
-        if (_current == null)
-            OnSelected(_buttons[0]);
-    }
+        private List<PageGroup> _tabsContent = new();
 
-    public void OnEnter(TabButton button)
-    {
-        ResetButtons();
+        private TabButton _current;
 
-        if (_current != button)
-            button.Background.material = _hovered;
-    }
-
-    public void OnExit() => ResetButtons();
-
-    public void OnSelected(TabButton button)
-    {
-        _current = button;
-        ResetButtons();
-        UpdatePages();
-        button.Background.material = _selected;
-    }
-
-    private void ResetButtons()
-    {
-        foreach (var button in _buttons)
+        private void Start()
         {
-            if (_current == button)
-                continue;
+            foreach (var tab in _buttons)
+                _tabsContent.Add(tab.PageGroup);
 
-            button.Background.material = null;
+            if (_current == null)
+                OnSelected(_buttons[0]);
         }
-    }
 
-    private void UpdatePages()
-    {
-        foreach (var group in _tabsContent)
+        public void OnEnter(TabButton button)
         {
-            if (group == null)
-                continue;
+            ResetButtons();
 
-            if (_current.PageGroup == group)
-                group.gameObject.SetActive(true);
-            else
-                group.gameObject.SetActive(false);
+            if (_current != button)
+                button.Background.material = _hovered;
+        }
+
+        public void OnExit() => ResetButtons();
+
+        public void OnSelected(TabButton button)
+        {
+            _current = button;
+            ResetButtons();
+            UpdatePages();
+            button.Background.material = _selected;
+        }
+
+        private void ResetButtons()
+        {
+            foreach (var button in _buttons)
+            {
+                if (_current == button)
+                    continue;
+
+                button.Background.material = null;
+            }
+        }
+
+        private void UpdatePages()
+        {
+            foreach (var group in _tabsContent)
+            {
+                if (group == null)
+                    continue;
+
+                if (_current.PageGroup == group)
+                    group.gameObject.SetActive(true);
+                else
+                    group.gameObject.SetActive(false);
+            }
         }
     }
 }

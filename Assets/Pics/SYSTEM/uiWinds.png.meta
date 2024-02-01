@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,196 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: uiWinds_1
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 452
+        width: 703
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c23a9ae14b9d194782e2de4e61bf8c0
+      internalID: -1819825035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_2
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 444
+        width: 387
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677c44bf533342b4a8251d6a2a97261b
+      internalID: 184017059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_3
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 446
+        width: 186
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d2af19468c2a074488af0071eb37246
+      internalID: 727644979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_4
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 236
+        width: 701
+        height: 180
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c685c977d5c48fc498c883feaecae5ee
+      internalID: -1952284482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_5
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 232
+        width: 384
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d502cfd3e3cc54341b968fe17011b1d1
+      internalID: -48576923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_6
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 229
+        width: 189
+        height: 187
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3175b08d145bb4f981031b696912d0
+      internalID: 1466415293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_7
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 10
+        width: 703
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f07138bb94aa2db42a389d2791e6287f
+      internalID: -1588945991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_8
+      rect:
+        serializedVersion: 2
+        x: 756
+        y: 8
+        width: 389
+        height: 184
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 709eea4a1c53b76488ca0987fe3c81b6
+      internalID: 20743165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: uiWinds_9
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 7
+        width: 184
+        height: 183
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4a7ec04c6d4044bb3b693ffbcbb260
+      internalID: 728496149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +321,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      uiWinds_0: -706090002
+      uiWinds_1: -1819825035
+      uiWinds_10: -1510668798
+      uiWinds_2: 184017059
+      uiWinds_3: 727644979
+      uiWinds_4: -1952284482
+      uiWinds_5: -48576923
+      uiWinds_6: 1466415293
+      uiWinds_7: -1588945991
+      uiWinds_8: 20743165
+      uiWinds_9: 728496149
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

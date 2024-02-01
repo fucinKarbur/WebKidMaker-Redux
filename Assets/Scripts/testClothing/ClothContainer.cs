@@ -1,12 +1,13 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class ClothContainer : MonoBehaviour
+namespace WKMR
 {
-    public void Reset()
+    public class ClothContainer : MonoBehaviour
     {
-        foreach (var item in GetComponentsInChildren<ClothTemplate>())
-            Destroy(item.gameObject);
+        public void Reset()
+        {
+            foreach (var item in GetComponentsInChildren<ClothTemplate>())
+                Destroy(item.gameObject);
+        }
     }
 }
