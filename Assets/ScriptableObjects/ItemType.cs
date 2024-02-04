@@ -4,8 +4,8 @@ namespace WKMR
     public enum ItemType
     {
         //CLOTH
-        TopUnderwear,
-        TopOuterwear,
+        Top,
+        Jacket,
         Pants,
         Scirt,
         Dress,

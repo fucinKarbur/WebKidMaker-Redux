@@ -12,8 +12,11 @@ namespace WKMR
 
         public void SetImage(Sprite sprite)
         {
-            Image.sprite = sprite;
-            Image.SetNativeSize();
+            if (sprite != null)
+            {
+                Image.sprite = sprite;
+                Image.SetNativeSize();
+            }
         }
 
         public void SetColor(Color color) => Image.color = color;
