@@ -256,6 +256,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _changeSize: 1
+  _increaseSize: {x: 0.1, y: 0.1, z: 0}
+  _changeMaterial: 0
+  _material: {fileID: 0}
+  _playSound: 0
+  _sound: {fileID: 0}
 --- !u!114 &2875242499328818220
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -1,5 +1,5 @@
 {
-    "editor.defaultFormatter": "visualstudiotoolsforunity.vstuc",
+    "editor.defaultFormatter": "ms-dotnettools.vscodeintellicode-csharp",
     "vstuc.refreshOnSave": true,
     "unity-code-snippets.style": "allman",
     "dotnet.preferCSharpExtension": true,
