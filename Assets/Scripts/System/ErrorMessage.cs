@@ -11,13 +11,13 @@ namespace WKMR
         private TMP_Text _text;
         private string _language;
 
-        private Dictionary<string, Dictionary<string, string>> _messages = new()
+        private readonly Dictionary<string, Dictionary<string, string>> _messages = new()
         {{
     MessageManager.KidClosed, new Dictionary<string, string>()
     {
-        { "ru", "Привет" },
-        { "en", "Hello" },
-        { "tr", "Merhaba" }
+        { "ru", "Действие невозможно.\nКид должен быть открыт!" },
+        { "en", "Action is impossible.\nThe Kid must be open!" },
+        { "tr", "Harekete geçmek imkansız.\nÇocuk açık olmalı!" }
     }},
         };
 

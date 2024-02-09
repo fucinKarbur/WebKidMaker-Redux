@@ -17,6 +17,7 @@ namespace WKMR
 
         private WaitForSeconds _wait;
         private Vector3 _position;
+        private Camera _camera;
 
         private void Awake()
         {
@@ -34,6 +35,7 @@ namespace WKMR
         private void Start()
         {
             _wait = new(_delay);
+            _camera = Camera.main;
             _errorMessage.gameObject.SetActive(false);
         }
 

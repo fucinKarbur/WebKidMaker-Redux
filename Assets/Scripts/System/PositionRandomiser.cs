@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace WKMR.System
 {
-    public static class PositionSetter
+    public static class PositionRandomiser
     {
         private static float _minY = -300f;
         private static float _maxY = 350f;

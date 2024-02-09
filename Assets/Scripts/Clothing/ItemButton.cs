@@ -35,10 +35,13 @@ namespace WKMR
 
         public void Spawn()
         {
-            _clearButton.Clear();
+            if (TryToSpawn())
+            {
+                _clearButton.Clear();
 
-            var spawned = Instantiate(_template, _container.transform.position, Quaternion.identity, _container.transform);
-            SetItem(spawned);
+                var spawned = Instantiate(_template, _container.transform.position, Quaternion.identity, _container.transform);
+                SetItem(spawned);
+            }
         }
 
         private void SetItem(ClothTemplate spawned)
@@ -49,6 +52,19 @@ namespace WKMR
 
             if (_item.Colorable)
                 _coloringButton.TryToColor(spawned, _palette);
+        }
+
+        private bool TryToSpawn()
+        {
+            if (_container.gameObject.activeInHierarchy)
+            {
+                return true;
+            }
+            else
+            {
+                MessageManager.Instance.ShowMessage(MessageManager.KidClosed);
+                return false;
+            }
         }
     }
 }

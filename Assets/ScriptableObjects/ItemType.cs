@@ -21,5 +21,12 @@ namespace WKMR
         Hair_Back,
         Hair_LeftPonitail,
         Hair_RightPonitail,
+
+        //FACE
+        Browns,
+        Eyes,
+        Nose,
+        Cheecks,
+        Mouth,
     }
 }

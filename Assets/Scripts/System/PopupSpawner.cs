@@ -98,7 +98,7 @@ namespace WKMR.System
 
         private void SetPopup(Popup spawned)
         {
-            spawned.Transform.anchoredPosition = PositionSetter.GetRandomPosition(_canvas);
+            spawned.Transform.anchoredPosition = PositionRandomiser.GetRandomPosition(_canvas);
             spawned.Image.sprite = RandomSprite();
             spawned.Text.text = RandomMessage();
         }
