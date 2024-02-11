@@ -23,6 +23,6 @@ namespace WKMR
             }
         }
 
-        public void SetColor(Color color) => Image.color = color;
+        public virtual void SetColor(Color color) => Image.color = color;
     }
 }

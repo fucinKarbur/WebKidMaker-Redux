@@ -10,9 +10,10 @@ namespace WKMR
     [RequireComponent(typeof(ColoringButton))]
     public class ItemButton : MonoBehaviour
     {
+        [SerializeField] protected ItemData Item;
+
         [SerializeField] private Palette _palette;
         [SerializeField] private ClearButton _clearButton;
-        [SerializeField] private ItemData _item;
         [SerializeField] private ClothContainer _container;
         [SerializeField] private ClothTemplate _template;
 
@@ -26,7 +27,7 @@ namespace WKMR
             _button = GetComponent<Button>();
             _coloringButton = GetComponent<ColoringButton>();
 
-            _icon.sprite = _item.Icon;
+            _icon.sprite = Item.Icon;
         }
 
         private void OnEnable() => _button.onClick.AddListener(Spawn);
@@ -44,13 +45,13 @@ namespace WKMR
             }
         }
 
-        private void SetItem(ClothTemplate spawned)
+        protected virtual void SetItem(ClothTemplate spawned)
         {
-            spawned.SetImage(_item.Icon);
-            spawned.gameObject.name = _item.name;
-            spawned.transform.localPosition += _item.Offset;
+            spawned.SetImage(Item.Icon);
+            spawned.gameObject.name = Item.name;
+            spawned.transform.localPosition += Item.Offset;
 
-            if (_item.Colorable)
+            if (Item.Colorable)
                 _coloringButton.TryToColor(spawned, _palette);
         }
 
