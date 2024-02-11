@@ -28,5 +28,8 @@ namespace WKMR
         Nose,
         Cheecks,
         Mouth,
+        Ears,
+        HumEars,
+        
     }
 }
