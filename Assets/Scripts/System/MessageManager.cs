@@ -6,7 +6,8 @@ namespace WKMR
 {
     public class MessageManager : MonoBehaviour
     {
-        public const string Error = "Error";
+        public const string NoEars = "NoEars";
+        public const string NotHumanEars = "NotHumanEars";
         public const string KidClosed = "KidClosed";
 
         public static MessageManager Instance;

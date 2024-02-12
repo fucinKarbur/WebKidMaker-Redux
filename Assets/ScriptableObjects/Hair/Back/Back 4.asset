@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4958f300e87a1e54992ee5ae57ad4d08, type: 3}
   m_Name: Back 4
   m_EditorClassIdentifier: 
-  _type: 12
+  _type: 15
   _icon: {fileID: -927146875, guid: 0ba21d53913686e43b7403003d08a665, type: 3}
   _colorable: 0
   _offset: {x: 11, y: -119, z: 0}

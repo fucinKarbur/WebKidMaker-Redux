@@ -7,6 +7,7 @@ namespace WKMR
     public class ClothTemplate : MonoBehaviour
     {
         public Image Image { get; private set; }
+        public ItemData Item { get; private set; }
 
         private void Awake() => Image = GetComponent<Image>();
 
@@ -24,5 +25,7 @@ namespace WKMR
         }
 
         public virtual void SetColor(Color color) => Image.color = color;
+
+        public void GetItem(ItemData data) => Item = data;
     }
 }

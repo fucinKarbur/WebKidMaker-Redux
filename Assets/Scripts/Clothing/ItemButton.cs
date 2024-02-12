@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using WKMR.Coloring;
 
@@ -11,11 +10,11 @@ namespace WKMR
     public class ItemButton : MonoBehaviour
     {
         [SerializeField] protected ItemData Item;
+        [SerializeField] protected ClothContainer Container;
+        [SerializeField] protected ClothTemplate Template;
 
         [SerializeField] private Palette _palette;
         [SerializeField] private ClearButton _clearButton;
-        [SerializeField] private ClothContainer _container;
-        [SerializeField] private ClothTemplate _template;
 
         private Image _icon;
         private Button _button;
@@ -34,19 +33,20 @@ namespace WKMR
 
         private void OnDisable() => _button.onClick.RemoveListener(Spawn);
 
-        public void Spawn()
+        public virtual void Spawn()
         {
             if (TryToSpawn())
             {
                 _clearButton.Clear();
 
-                var spawned = Instantiate(_template, _container.transform.position, Quaternion.identity, _container.transform);
+                var spawned = Instantiate(Template, Container.transform.position, Quaternion.identity, Container.transform);
                 SetItem(spawned);
             }
         }
 
         protected virtual void SetItem(ClothTemplate spawned)
         {
+            spawned.GetItem(Item);
             spawned.SetImage(Item.Icon);
             spawned.gameObject.name = Item.name;
             spawned.transform.localPosition += Item.Offset;
@@ -55,9 +55,9 @@ namespace WKMR
                 _coloringButton.TryToColor(spawned, _palette);
         }
 
-        private bool TryToSpawn()
+        protected bool TryToSpawn()
         {
-            if (_container.gameObject.activeInHierarchy)
+            if (Container.gameObject.activeInHierarchy)
             {
                 return true;
             }

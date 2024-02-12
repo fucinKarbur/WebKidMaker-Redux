@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: Mouth 33
   m_EditorClassIdentifier: 
-  _type: 19
+  _type: 22
   _icon: {fileID: 1931708189, guid: 7cf4fbed6a8250b4c818d42cbd2fc012, type: 3}
   _colorable: 1
   _offset: {x: 0, y: 0, z: 0}

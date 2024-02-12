@@ -1,12 +1,16 @@
 {
     "editor.defaultFormatter": "ms-dotnettools.vscodeintellicode-csharp",
     "vstuc.refreshOnSave": true,
-    "unity-code-snippets.style": "allman",
+    "unity-code-snippets.style": "kr",
     "dotnet.preferCSharpExtension": true,
     "[csharp]": {
         "editor.defaultFormatter": "ms-dotnettools.csharp"
     },
     "files.exclude": {
         "**/*.meta": true
-    }
+    },
+    "markdown.updateLinksOnFileMove.enabled": "never",
+    "unity-code-snippets.autoComplete.experimentalAttributes": true,
+    "editor.defaultFoldingRangeProvider": "visualstudiotoolsforunity.vstuc",
+    "files.autoSave": "afterDelay"
 }

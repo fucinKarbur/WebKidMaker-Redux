@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4958f300e87a1e54992ee5ae57ad4d08, type: 3}
   m_Name: 5Browns 1
   m_EditorClassIdentifier: 
-  _type: 15
+  _type: 18
   _icon: {fileID: 1421385637, guid: 1183acf554d3ac74385196098b8b3899, type: 3}
   _colorable: 0
   _offset: {x: 0, y: 1, z: 0}

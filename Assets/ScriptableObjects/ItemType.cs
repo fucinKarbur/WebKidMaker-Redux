@@ -8,11 +8,15 @@ namespace WKMR
         Jacket,
         Pants,
         Scirt,
-        Dress,
+        Neck,
         Socks,
         Tights,
         Shoes,
         Hat,
+        Glasses,
+        Earrings,
+        Hairpins,
+
 
         //HAIR
         Hair_Front,

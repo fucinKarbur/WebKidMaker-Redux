@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: Ears 3
   m_EditorClassIdentifier: 
-  _type: 20
+  _type: 23
   _icon: {fileID: 983793738, guid: 916fe419fc5a6854c88ceb293e11f202, type: 3}
   _colorable: 1
   _offset: {x: -13, y: 90, z: 0}
