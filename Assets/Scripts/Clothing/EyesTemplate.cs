@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace WKMR
 {
-    public class EyesTemplate: ClothTemplate
+    public class EyesTemplate: ItemTemplate
     {
         private EyesData _eyesData;
 

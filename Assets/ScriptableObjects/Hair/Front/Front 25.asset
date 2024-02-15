@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4958f300e87a1e54992ee5ae57ad4d08, type: 3}
   m_Name: Front 25
   m_EditorClassIdentifier: 
-  _type: 12
+  _type: 13
   _icon: {fileID: -403079448, guid: ee1725e386a81c9409c6a710a64583cd, type: 3}
   _colorable: 0
   _offset: {x: 15, y: -45, z: 0}

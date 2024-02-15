@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 6310398709143227743}
   - component: {fileID: 8025331686927937230}
   - component: {fileID: 8902465265323616486}
+  - component: {fileID: 1090434721586870024}
+  - component: {fileID: 2439420900454261368}
   m_Layer: 5
   m_Name: itemBtn
   m_TagString: Untagged
@@ -133,7 +135,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bb42f400d96990d42b6de690a0d8c492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _item: {fileID: 0}
-  _icon: {fileID: 6310398709143227743}
-  _container: {fileID: 0}
-  _template: {fileID: 6070712460942393109, guid: a8dd421dac2047748b600ae25d65cf2a, type: 3}
+  Item: {fileID: 0}
+  Container: {fileID: 0}
+  Template: {fileID: 0}
+  _palette: {fileID: 0}
+  _clearButton: {fileID: 0}
+--- !u!114 &1090434721586870024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107558663863131826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9079383f99c2f2f42873acb3d8919c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _palette: {fileID: 0}
+--- !u!114 &2439420900454261368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107558663863131826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30ed70203e1371a4a891e558685f393b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _entered: {fileID: 2100000, guid: ad39b08d486dbc449b328c796d7fcddf, type: 2}
+  _selected: {fileID: 2100000, guid: 13d30a33f8e810342a9e8a8f1089b5e6, type: 2}

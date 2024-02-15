@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Pin 1
   m_EditorClassIdentifier: 
   _type: 11
-  _icon: {fileID: 1624688337, guid: f9ea4b5792f194546a992b4cea43af53, type: 3}
+  _icon: {fileID: 2017136585, guid: f9ea4b5792f194546a992b4cea43af53, type: 3}
   _colorable: 0
   _offset: {x: 0, y: 0, z: 0}

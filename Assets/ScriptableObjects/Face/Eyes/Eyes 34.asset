@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d5653cf14bfa940add453bc8189576, type: 3}
   m_Name: Eyes 34
   m_EditorClassIdentifier: 
-  _type: 19
+  _type: 20
   _icon: {fileID: -2040196963, guid: 63fa912dac3436442a5b1a208b8fe44a, type: 3}
   _colorable: 0
   _offset: {x: 5, y: -7, z: 0}

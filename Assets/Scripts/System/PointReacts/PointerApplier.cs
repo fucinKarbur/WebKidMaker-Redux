@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using WKMR.System.PointReacts.Reactions;
+using YG;
 
 namespace WKMR.System.PointReacts
 {
@@ -20,7 +21,7 @@ namespace WKMR.System.PointReacts
                 [Header("Sound Settings")]
                 [SerializeField] private bool _playSound = false;
                 [SerializeField] private AudioClip _sound;
-                
+
                 private readonly List<Reaction> _reactions = new();
 
                 private Transform _transform;
@@ -44,30 +45,26 @@ namespace WKMR.System.PointReacts
                 #region Events
                 public void OnPointerEnter(PointerEventData eventData)
                 {
-#if UNITY_STANDALONE || UNITY_EDITOR
-                        React();
-#endif
+                        if (YandexGame.EnvironmentData.isDesktop)
+                                React();
                 }
 
                 public void OnPointerExit(PointerEventData eventData)
                 {
-#if UNITY_STANDALONE || UNITY_EDITOR
-                        SetDefault();
-#endif
+                        //if (YandexGame.EnvironmentData.isDesktop)
+                                SetDefault();
                 }
 
                 public void OnPointerClick(PointerEventData eventData)
                 {
-#if UNITY_STANDALONE == false || UNITY_EDITOR == false
-                        React();
-#endif
+                        if (YandexGame.EnvironmentData.isMobile || YandexGame.EnvironmentData.isTablet)
+                                React();
                 }
 
                 public void OnPointerUp(PointerEventData eventData)
                 {
-#if UNITY_STANDALONE == false || UNITY_EDITOR == false
-                        SetDefault();
-#endif
+                        if (YandexGame.EnvironmentData.isMobile || YandexGame.EnvironmentData.isTablet)
+                                SetDefault();
                 }
 
                 #endregion

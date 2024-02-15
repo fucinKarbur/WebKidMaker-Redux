@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: Nose 35
   m_EditorClassIdentifier: 
-  _type: 20
+  _type: 21
   _icon: {fileID: 592380984, guid: a6244490f66e0a841be46f6914f26b97, type: 3}
   _colorable: 1
   _offset: {x: 1, y: -7, z: 0}

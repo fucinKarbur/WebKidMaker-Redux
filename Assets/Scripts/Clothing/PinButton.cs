@@ -7,7 +7,7 @@ namespace WKMR
     {
         [SerializeField] private Transform[] _spawnPoints;
 
-        private ClothTemplate _lastSpawned;
+        private ItemTemplate _lastSpawned;
 
         public void OnPointerClick(PointerEventData eventData)
         {

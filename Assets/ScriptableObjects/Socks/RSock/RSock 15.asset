@@ -15,4 +15,4 @@ MonoBehaviour:
   _type: 5
   _icon: {fileID: -1979570144, guid: c3b3234624de41f479a011f82ed277f3, type: 3}
   _colorable: 0
-  _offset: {x: 0.5, y: -55, z: 0}
+  _offset: {x: 4, y: -58, z: 0}

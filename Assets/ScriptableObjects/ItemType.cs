@@ -16,7 +16,7 @@ namespace WKMR
         Glasses,
         Earrings,
         Hairpins,
-
+        Mask,
 
         //HAIR
         Hair_Front,

@@ -11,22 +11,26 @@ namespace WKMR
     {
         [SerializeField] protected ItemData Item;
         [SerializeField] protected ClothContainer Container;
-        [SerializeField] protected ClothTemplate Template;
+        [SerializeField] protected ItemTemplate Template;
 
         [SerializeField] private Palette _palette;
         [SerializeField] private ClearButton _clearButton;
 
-        private Image _icon;
+        private Image _image;
         private Button _button;
         private ColoringButton _coloringButton;
 
+        public ClothContainer ClothContainer => Container;
+        public ItemData ItemData => Item;
+        public Image Image => _image;
+
         private void Awake()
         {
-            _icon = GetComponent<Image>();
+            _image = GetComponent<Image>();
             _button = GetComponent<Button>();
             _coloringButton = GetComponent<ColoringButton>();
 
-            _icon.sprite = Item.Icon;
+            _image.sprite = Item.Icon;
         }
 
         private void OnEnable() => _button.onClick.AddListener(Spawn);
@@ -44,7 +48,7 @@ namespace WKMR
             }
         }
 
-        protected virtual void SetItem(ClothTemplate spawned)
+        protected virtual void SetItem(ItemTemplate spawned)
         {
             spawned.GetItem(Item);
             spawned.SetImage(Item.Icon);

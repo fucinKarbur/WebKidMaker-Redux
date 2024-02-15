@@ -30,7 +30,7 @@ namespace WKMR
 
         private bool HumanlikeEars()
         {
-            var ears = _earsContainer.transform.GetComponentInChildren<ClothTemplate>();
+            var ears = _earsContainer.transform.GetComponentInChildren<ItemTemplate>();
 
             if (ears.Item.Type == ItemType.HumEars)
             {

@@ -21,7 +21,7 @@ namespace WKMR.Coloring
             }
         }
 
-        public void TryToColor(ClothTemplate template, Palette palette)
+        public void TryToColor(ItemTemplate template, Palette palette)
         {
             OpenPalette(palette);
 

@@ -2,7 +2,7 @@ namespace WKMR
 {
     public class EyesButton : ItemButton
     {
-        protected override void SetItem(ClothTemplate spawned)
+        protected override void SetItem(ItemTemplate spawned)
         {
             var eyestemplate = spawned as EyesTemplate;
 
