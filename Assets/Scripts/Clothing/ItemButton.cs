@@ -67,7 +67,7 @@ namespace WKMR
             }
             else
             {
-                MessageManager.Instance.ShowMessage(MessageManager.KidClosed);
+                MessageManager.Instance.ShowMessage(ErrorType.KidClosed);
                 return false;
             }
         }

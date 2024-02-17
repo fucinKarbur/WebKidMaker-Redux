@@ -23,7 +23,7 @@ namespace WKMR
             }
             else
             {
-                MessageManager.Instance.ShowMessage(MessageManager.NoEars);
+                MessageManager.Instance.ShowMessage(ErrorType.NoEars);
                 return false;
             }
         }
@@ -38,7 +38,7 @@ namespace WKMR
             }
             else
             {
-                MessageManager.Instance.ShowMessage(MessageManager.NotHumanEars);
+                MessageManager.Instance.ShowMessage(ErrorType.NotHumanEars);
                 return false;
             }
         }

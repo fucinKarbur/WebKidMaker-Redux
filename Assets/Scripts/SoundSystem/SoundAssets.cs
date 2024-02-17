@@ -6,37 +6,25 @@ namespace WKMR
     public class SoundAssets : MonoBehaviour
     {
         private static readonly string _containerName = "container";
-        private static readonly string _objectName = "SoundAssets";
 
-        private static SoundAssets _instance;
+        public static SoundAssets Instance;
 
         [SerializeField] private SoundClip[] _clips;
         [SerializeField] private List<SoundClip> _bgClips;
         [SerializeField] private Transform _container;
-
-        public static SoundAssets Instance
-        {
-            get
-            {
-                if (_instance == null)
-                    _instance = Instantiate(Resources.Load<SoundAssets>(_objectName));
-
-                return _instance;
-            }
-        }
 
         public SoundClip[] SoundClips => _clips;
         public List<SoundClip> BgClips => _bgClips;
 
         private void Awake()
         {
-            if (_instance != null && _instance != this)
+            if (Instance != null && Instance != this)
             {
                 Destroy(gameObject);
             }
             else
             {
-                _instance = this;
+                Instance = this;
                 DontDestroyOnLoad(gameObject);
             }
 

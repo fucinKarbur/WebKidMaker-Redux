@@ -17,8 +17,8 @@ MonoBehaviour:
   autoGameReadyAPI: 1
   playerInfoSimulation:
     authorized: 1
-    isMobile: 1
-    language: en
+    isMobile: 0
+    language: ru
     name: buyfn
     uniqueID: 666
     photo: https://justplaygames.ru/public/icon_player.png
@@ -323,7 +323,7 @@ MonoBehaviour:
     consumed: 1
   metricaEnable: 1
   metricaCounterID: 0
-  debug: 1
+  debug: 0
   archivingBuild: 1
   logoImageFormat: 1
   backgroundImageFormat: 3

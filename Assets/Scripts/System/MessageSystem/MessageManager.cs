@@ -6,10 +6,6 @@ namespace WKMR
 {
     public class MessageManager : MonoBehaviour
     {
-        public const string NoEars = "NoEars";
-        public const string NotHumanEars = "NotHumanEars";
-        public const string KidClosed = "KidClosed";
-
         public static MessageManager Instance;
 
         private readonly float _delay = 2;
@@ -40,7 +36,7 @@ namespace WKMR
             _errorMessage.gameObject.SetActive(false);
         }
 
-        public void ShowMessage(string errorCode)
+        public void ShowMessage(ErrorType errorCode)
         {
             _errorMessage.transform.position = GetPosition();
             _errorMessage.gameObject.SetActive(true);

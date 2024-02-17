@@ -12,5 +12,6 @@
     "markdown.updateLinksOnFileMove.enabled": "never",
     "unity-code-snippets.autoComplete.experimentalAttributes": true,
     "editor.defaultFoldingRangeProvider": "visualstudiotoolsforunity.vstuc",
-    "files.autoSave": "afterDelay"
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100
 }

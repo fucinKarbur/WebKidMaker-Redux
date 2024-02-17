@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using WKMR.System;
+using YG;
 
 namespace WKMR.System
 {
@@ -15,15 +16,15 @@ namespace WKMR.System
         [SerializeField] private Kid _kid;
         [SerializeField] private GameObject[] _defaultComponents;
         [SerializeField] private GameObject[] _surgeonComponents;
+        [SerializeField] private SurgeryMessage _message;
+        [SerializeField] private Toggle _toggle;
 
         private bool _surgeonMode;
 
-        public bool Surgeon => _surgeonMode;
-
         private void Awake()
         {
-            //_surgeonMode = false;
             _image.sprite = _defaultIcon;
+            _toggle.isOn = YandexGame.savesData.ReadyForSurgery;
         }
 
         public override void OnPointerClick(PointerEventData eventData)
@@ -36,10 +37,7 @@ namespace WKMR.System
                 }
                 else
                 {
-                    if (_surgeonMode)
-                        SetDefaultMode();
-                    else
-                        SetSurgeonMode();
+                    SetMode();
                 }
         }
 
@@ -69,5 +67,33 @@ namespace WKMR.System
         }
 
         private void SwitchIcon(Sprite sprite) => _image.sprite = sprite;
+
+        private void SetMode()
+        {
+            if (YandexGame.savesData.ReadyForSurgery == false)
+            {
+                TryShowMessage();
+                return;
+            }
+
+            if (_surgeonMode)
+                SetDefaultMode();
+            else
+                SetSurgeonMode();
+        }
+
+        private void TryShowMessage()
+        {
+            if (YandexGame.savesData.SurgeryRefused == false)
+                _message.gameObject.SetActive(true);
+            else
+                SetDefaultMode();
+        }
+
+        protected override void OnWindowClosed()
+        {
+            SetDefaultMode();
+            _image.sprite = _defaultIcon;
+        }
     }
 }

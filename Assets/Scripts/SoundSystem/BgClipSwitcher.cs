@@ -2,17 +2,33 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using TMPro;
 using UnityEngine;
 
 namespace WKMR
 {
     public class BgClipSwitcher : MonoBehaviour
     {
-        private int GetBgClipIndex()
-        {
-            var source = SourcePool.MusicSource;
+        [SerializeField] private TMP_Text _indexText;
 
-            if (source != null)
+        private AudioSource _source;
+        private List<AudioClip> _clips = new();
+        private int _index;
+        private int _amount;
+
+        private void OnEnable()
+        {
+            _source = SourcePool.MusicSource;
+            GetClips();
+            _index = GetClipIndex();
+            _amount = _clips.Count;
+
+            UpdateDisplay();
+        }
+
+        private int GetClipIndex()
+        {
+            if (_source != null)
             {
                 var current = SoundAssets.Instance.BgClips.FirstOrDefault(clip => clip.Clip == SourcePool.MusicSource.clip);
                 return SoundAssets.Instance.BgClips.IndexOf(current);
@@ -21,34 +37,41 @@ namespace WKMR
             return 0;
         }
 
+        private void GetClips()
+        {
+            foreach (var sound in SoundAssets.Instance.BgClips)
+                    _clips.Add(sound.Clip);
+        }
+
         public void NextBgClip()
         {
-            var index = GetBgClipIndex();
-            index++;
+            _index++;
 
-            if (index == SoundAssets.Instance.BgClips.Count)
-                index = 0;
+            if (_index == _amount)
+                _index = 0;
 
-            SwitchClip(index);
+            SwitchClip();
         }
 
         public void PreviousBgClip()
         {
-            var index = GetBgClipIndex();
-            index--;
+            _index--;
 
-            if (index < 0)
-                index = SoundAssets.Instance.BgClips.Count - 1;
+            if (_index < 0)
+                _index = _amount - 1;
 
-            SwitchClip(index);
+            SwitchClip();
         }
 
-        private void SwitchClip(int index)
+        private void SwitchClip()
         {
-            if (SourcePool.MusicSource != null)
-                SourcePool.MusicSource.clip = SoundAssets.Instance.BgClips[index].Clip;
+            if (_source != null)
+                _source.clip = _clips[_index];
 
             SourcePool.MusicSource.Play();
+            UpdateDisplay();
         }
+
+        private void UpdateDisplay() => _indexText.text = _index + 1 + " / " + _amount;
     }
 }

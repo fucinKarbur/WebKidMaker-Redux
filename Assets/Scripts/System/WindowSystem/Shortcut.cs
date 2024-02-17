@@ -9,11 +9,17 @@ namespace WKMR.System
 
         public bool IsOpen => Window.gameObject.activeSelf;
 
+        private void OnEnable() => Window.Closed += OnWindowClosed;
+
+        private void OnDisable() => Window.Closed -= OnWindowClosed;
+
         public virtual void OnPointerClick(PointerEventData eventData)
         {
             if (eventData.dragging == false)
                 if (IsOpen == false)
                     Window.gameObject.SetActive(true);
         }
+
+        protected virtual void OnWindowClosed(){}
     }
 }
