@@ -1,8 +1,3 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,12 +14,9 @@ namespace WKMR.System
         private Vector3 _surgeonScale = new(1.7f, 1.7f, 0);
         private Vector3 _surgeonPosition = new(0, -170, 0);
 
-        private void Awake()
-        {
-            _transform = GetComponent<RectTransform>();
-        }
+        private void Awake() => _transform = GetComponent<RectTransform>();
 
-        public void PrepareForSurgeon()
+        public void PrepareForSurgery()
         {
             _transform.anchoredPosition = _surgeonPosition;
             _scaleButton.ChangeScale(_surgeonScale);

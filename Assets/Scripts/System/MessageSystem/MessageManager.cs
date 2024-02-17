@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace WKMR
@@ -13,7 +12,6 @@ namespace WKMR
         [SerializeField] private ErrorMessage _errorMessage;
 
         private WaitForSeconds _wait;
-        private Vector3 _position;
         private Camera _camera;
 
         private void Awake()
@@ -53,7 +51,7 @@ namespace WKMR
 
         private Vector3 GetPosition()
         {
-            var position = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+            var position = _camera.ScreenToWorldPoint(Input.mousePosition);
             position.z = 0;
 
             return position;

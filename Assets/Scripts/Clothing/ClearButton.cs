@@ -10,7 +10,8 @@ namespace WKMR
         public void Clear()
         {
             foreach (var container in _containers)
-                container.Reset();
+                if (container.gameObject.activeInHierarchy)
+                    container.Reset();
         }
     }
 }

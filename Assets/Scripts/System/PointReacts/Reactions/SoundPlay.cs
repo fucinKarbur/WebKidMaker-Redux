@@ -1,19 +1,15 @@
-using UnityEngine;
-
 namespace WKMR.System.PointReacts.Reactions
 {
     public class SoundPlay : Reaction
     {
-        private readonly AudioClip _clip;
-        private readonly AudioSource _source;
+        private readonly SoundPlayer _player;
 
-        public SoundPlay(AudioClip clip, AudioSource source)
+        public SoundPlay(SoundName sound)
         {
-            _clip = clip;
-            _source = source;
+            _player = new (sound);
         }
 
-        public override void React() => _source.PlayOneShot(_clip);
+        public override void React() => _player.PlaySound();
 
         public override void SetDefault() { }
     }

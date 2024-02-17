@@ -20,6 +20,6 @@ namespace WKMR.System
                     Window.gameObject.SetActive(true);
         }
 
-        protected virtual void OnWindowClosed(){}
+        protected virtual void OnWindowClosed() { }
     }
 }

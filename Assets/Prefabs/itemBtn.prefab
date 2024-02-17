@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8902465265323616486}
   - component: {fileID: 1090434721586870024}
   - component: {fileID: 2439420900454261368}
+  - component: {fileID: 5374147537511003859}
   m_Layer: 5
   m_Name: itemBtn
   m_TagString: Untagged
@@ -167,3 +168,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _entered: {fileID: 2100000, guid: ad39b08d486dbc449b328c796d7fcddf, type: 2}
   _selected: {fileID: 2100000, guid: 13d30a33f8e810342a9e8a8f1089b5e6, type: 2}
+--- !u!114 &5374147537511003859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9107558663863131826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a37661bf09d0654d835888c60940347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

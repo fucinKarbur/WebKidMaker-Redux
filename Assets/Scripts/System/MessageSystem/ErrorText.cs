@@ -1,7 +1,4 @@
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace WKMR.Assets.Scripts.System.MessageSystem
 {
@@ -41,6 +38,13 @@ namespace WKMR.Assets.Scripts.System.MessageSystem
                     { Ru, "это важный вопрос, влияющий на геймплей.\nпожалуйста, ответьте на него." },
                     { En, "this is an important question that\naffects gameplay. please answer it." },
                     { Tr, "Bu, oyunu etkileyen önemli\nbir soru. Lütfen cevaplayın." }
+                }
+            },
+            { ErrorType.SurgeryWasRefused, new Dictionary<string, string>()
+                {
+                    { Ru, "вы отказались от этого режима. изменить\nрешение можно в настройках игры." },
+                    { En, "you have opted out of this mode. you can\nchange the decision in the game settings." },
+                    { Tr, "bu modu iptal ettiniz. oyun ayarlarından\nkararı değiştirebilirsiniz." }
                 }
             },
         };

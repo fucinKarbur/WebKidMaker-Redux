@@ -1,4 +1,3 @@
-using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -9,8 +8,6 @@ namespace WKMR
     public class SurgeryMessage : MonoBehaviour, IPointerClickHandler
     {
         [SerializeField] private Image _overlay;
-
-        public event Action SurgeryRefused;
 
         public void AcceptSurgery()
         {

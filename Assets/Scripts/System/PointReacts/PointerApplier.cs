@@ -1,14 +1,11 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using WKMR.System.PointReacts.Reactions;
-using YG;
 
 namespace WKMR.System.PointReacts
 {
-        public class PointerApplier : MonoBehaviour,
-        IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler, IPointerUpHandler
+    public abstract class PointerApplier : MonoBehaviour
         {
                 [Header("Size Settings")]
                 [SerializeField] private bool _changeSize = false;
@@ -20,15 +17,14 @@ namespace WKMR.System.PointReacts
 
                 [Header("Sound Settings")]
                 [SerializeField] private bool _playSound = false;
-                [SerializeField] private AudioClip _sound;
+                [SerializeField] private SoundName _sound;
 
                 private readonly List<Reaction> _reactions = new();
 
                 private Transform _transform;
                 private Image _image;
-                private AudioSource _source;
 
-                private void Awake()
+                private void Start()
                 {
                         if (_changeSize)
                                 OnChangeSize();
@@ -42,34 +38,6 @@ namespace WKMR.System.PointReacts
 
                 private void OnDisable() => SetDefault();
 
-                #region Events
-                public void OnPointerEnter(PointerEventData eventData)
-                {
-                        if (YandexGame.EnvironmentData.isDesktop)
-                                React();
-                }
-
-                public void OnPointerExit(PointerEventData eventData)
-                {
-                        //if (YandexGame.EnvironmentData.isDesktop)
-                                SetDefault();
-                }
-
-                public void OnPointerClick(PointerEventData eventData)
-                {
-                        if (YandexGame.EnvironmentData.isMobile || YandexGame.EnvironmentData.isTablet)
-                                React();
-                }
-
-                public void OnPointerUp(PointerEventData eventData)
-                {
-                        if (YandexGame.EnvironmentData.isMobile || YandexGame.EnvironmentData.isTablet)
-                                SetDefault();
-                }
-
-                #endregion
-
-                #region Reactions
                 private void OnChangeSize()
                 {
                         _transform = GetComponent<Transform>();
@@ -87,21 +55,16 @@ namespace WKMR.System.PointReacts
 
                 private void OnPlaySound()
                 {
-                        if (TryGetComponent(out _source) == false)
-                                _source = gameObject.AddComponent<AudioSource>();
-
-                        if (_sound != null)
-                                _reactions.Add(new SoundPlay(_sound, _source));
+                        _reactions.Add(new SoundPlay(_sound));
                 }
-                #endregion
 
-                private void React()
+                protected void React()
                 {
                         foreach (var reaction in _reactions)
                                 reaction.React();
                 }
 
-                private void SetDefault()
+                protected void SetDefault()
                 {
                         foreach (var reaction in _reactions)
                                 reaction.SetDefault();

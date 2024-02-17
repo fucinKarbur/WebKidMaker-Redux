@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace WKMR
@@ -14,6 +12,8 @@ namespace WKMR
         private readonly Vector3 _defaultScale = new(1, 1, 0);
         private readonly Vector3 _step = new(.2f, .2f, 0);
         private Vector3 _defaultPosition = new(0, 0, 0);
+
+        private void Awake() => Reset();
 
         public void IncreaseScale()
         {

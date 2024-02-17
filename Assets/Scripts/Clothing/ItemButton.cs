@@ -59,7 +59,7 @@ namespace WKMR
                 _coloringButton.TryToColor(spawned, _palette);
         }
 
-        protected bool TryToSpawn()
+        public bool TryToSpawn()
         {
             if (Container.gameObject.activeInHierarchy)
             {

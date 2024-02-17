@@ -14,6 +14,7 @@ namespace YG
 
         public bool ReadyForSurgery;
         public bool SurgeryRefused;
+        public bool PopupsAvailable;
 
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
@@ -24,6 +25,7 @@ namespace YG
         {
             ReadyForSurgery = false;
             ReadyForSurgery = false;
+            PopupsAvailable = true;
         }
     }
 }

@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.EventSystems;
@@ -40,8 +37,11 @@ namespace WKMR
 
         public void OnPointerClick(PointerEventData eventData)
         {
-            ChangeMaterial(_selected);
-            _clicked = true;
+            if (_button.TryToSpawn())
+            {
+                ChangeMaterial(_selected);
+                _clicked = true;
+            }
 
             if (_button.TryGetComponent(out EarrigsButton _))
                 OnCleared();

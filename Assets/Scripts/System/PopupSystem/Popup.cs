@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace WKMR.System
+namespace WKMR
 {
     [RequireComponent(typeof(RectTransform))]
     public class Popup : MonoBehaviour
