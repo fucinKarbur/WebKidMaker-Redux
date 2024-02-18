@@ -90,6 +90,8 @@ GameObject:
   - component: {fileID: 5823815165803189512}
   - component: {fileID: 5197835372528875878}
   - component: {fileID: 6953879293219812593}
+  - component: {fileID: 6307148310386132843}
+  - component: {fileID: 1227700537917415221}
   m_Layer: 6
   m_Name: organBtn
   m_TagString: Untagged
@@ -216,7 +218,7 @@ MonoBehaviour:
   _changeMaterial: 1
   _material: {fileID: 2100000, guid: 84bca4939da202e4a8cf34d698100725, type: 2}
   _playSound: 1
-  _sound: 1
+  _sound: 3
 --- !u!114 &5197835372528875878
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -247,3 +249,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a37661bf09d0654d835888c60940347, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6307148310386132843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5283983778122639376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9079383f99c2f2f42873acb3d8919c3a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _palette: {fileID: 0}
+--- !u!114 &1227700537917415221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5283983778122639376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70f378d108f642b4b8f0b51e8ed38206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _organs: []
+  _container: {fileID: 0}
+  _template: {fileID: 0}
+  _palette: {fileID: 0}

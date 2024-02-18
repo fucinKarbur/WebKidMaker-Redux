@@ -1,4 +1,6 @@
 using System.Collections.Generic;
+using UnityEngine;
+using YG;
 
 namespace WKMR.Assets.Scripts.System.MessageSystem
 {
@@ -8,9 +10,9 @@ namespace WKMR.Assets.Scripts.System.MessageSystem
         private const string En = "en";
         private const string Tr = "tr";
 
-        private string _language;
+        private string Language => YandexGame.savesData.language;
 
-        private Dictionary<ErrorType, Dictionary<string, string>> _texts = new Dictionary<ErrorType, Dictionary<string, string>>
+        private readonly Dictionary<ErrorType, Dictionary<string, string>> _texts = new()
         {
             { ErrorType.KidClosed, new Dictionary<string, string>()
                 {
@@ -49,11 +51,11 @@ namespace WKMR.Assets.Scripts.System.MessageSystem
             },
         };
 
-        public ErrorText(string language) => _language = language;
-
         public string GetText(ErrorType errorType)
         {
-            return _language switch
+
+            Debug.Log(YandexGame.EnvironmentData.language + " dont forget in error");
+            return Language switch
             {
                 Ru => _texts[errorType][Ru],
                 Tr => _texts[errorType][Tr],

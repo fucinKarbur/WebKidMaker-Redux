@@ -7,6 +7,8 @@ namespace WKMR.System
     {
         public event Action Closed;
 
+        private void OnEnable() => transform.position = Vector2.zero;
+
         private void OnDisable() => Closed?.Invoke();
     }
 }

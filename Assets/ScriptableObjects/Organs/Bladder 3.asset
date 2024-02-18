@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Bladder 3
   m_EditorClassIdentifier: 
   _type: 9
-  _icon: {fileID: 0}
+  _icon: {fileID: -1514244282, guid: 530e8939c2b529846a64fcf2669ca97e, type: 3}
   _offset: {x: 0, y: 0, z: 0}
-  _colorable: 0
+  _colorable: 1
   _isHealth: 0

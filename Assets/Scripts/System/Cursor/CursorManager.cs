@@ -25,7 +25,8 @@ namespace WKMR
 
         private void Start()
         {
-            Cursor.lockState = CursorLockMode.Confined;
+            //Cursor.lockState = CursorLockMode.Confined;
+            Debug.Log("before build change lockstate for cursor");
             ChangeCursor(CursorType.Default);
         }
 

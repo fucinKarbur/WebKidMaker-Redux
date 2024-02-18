@@ -1,7 +1,6 @@
 using TMPro;
 using UnityEngine;
 using WKMR.Assets.Scripts.System.MessageSystem;
-using YG;
 
 namespace WKMR
 {
@@ -14,7 +13,7 @@ namespace WKMR
         private void Awake()
         {
             _text = GetComponentInChildren<TMP_Text>();
-            _errorText = new (YandexGame.EnvironmentData.language);
+            _errorText = new ();
             _player = new(SoundName.Error);
         }
 

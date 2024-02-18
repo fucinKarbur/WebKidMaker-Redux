@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using YG;
 
 namespace WKMR
 {
@@ -64,13 +65,12 @@ namespace WKMR
         };
         private readonly List<Popup> _templates;
         private readonly List<Sprite> _sprites;
-        private readonly string _language;
+        private string Language => YandexGame.savesData.language;
 
-        public PopupMaker(List<Popup> templates, List<Sprite> sprites, string language)
+        public PopupMaker(List<Popup> templates, List<Sprite> sprites)
         {
             _templates = templates;
             _sprites = sprites;
-            _language = language;
         }
 
         public Popup GetPopup()
@@ -86,6 +86,6 @@ namespace WKMR
 
         private Sprite RandomSprite() => _sprites[Random.Range(0, _sprites.Count)];
 
-        private string RandomMessage() => _messages[_language][Random.Range(0, _messages[_language].Count)];
+        private string RandomMessage() => _messages[Language][Random.Range(0, _messages[Language].Count)];
     }
 }

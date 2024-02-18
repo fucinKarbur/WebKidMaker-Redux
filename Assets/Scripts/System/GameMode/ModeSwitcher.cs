@@ -14,7 +14,6 @@ namespace WKMR
         [SerializeField] private Sprite _surgeryIcon;
         [SerializeField] private Kid _kid;
         [SerializeField] private SurgeryMessage _message;
-        [SerializeField] private Toggle _toggle;
 
         private bool _isSurgery;
         private DefaultMode _defaultMode;
@@ -23,7 +22,6 @@ namespace WKMR
         private void Awake()
         {
             SwitchIcon(_defaultIcon);
-            _toggle.isOn = YandexGame.savesData.ReadyForSurgery;
 
             _defaultMode = new(_image, _kid, _defaultComponents, _surgeryComponents);
             _surgeryMode = new(_image, _kid, _surgeryComponents, _defaultComponents);

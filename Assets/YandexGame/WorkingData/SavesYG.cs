@@ -16,6 +16,9 @@ namespace YG
         public bool SurgeryRefused;
         public bool PopupsAvailable;
 
+        public float SFXVolume;
+        public float MusicVolume;
+
 
         // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
 
@@ -26,6 +29,9 @@ namespace YG
             ReadyForSurgery = false;
             ReadyForSurgery = false;
             PopupsAvailable = true;
+
+            SFXVolume = 1;
+            MusicVolume = .5f;
         }
     }
 }

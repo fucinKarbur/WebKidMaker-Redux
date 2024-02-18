@@ -22,7 +22,7 @@ namespace WKMR
         private void Awake()
         {
             _wait = new(_delay);
-            _maker = new(_templates, _sprites, YandexGame.EnvironmentData.language);
+            _maker = new(_templates, _sprites);
             _switcher.isOn = YandexGame.savesData.PopupsAvailable;
         }
 
@@ -31,11 +31,13 @@ namespace WKMR
             if (_switcher.isOn)
             {
                 YandexGame.savesData.PopupsAvailable = true;
+                YandexGame.SaveProgress();
                 StartCoroutine(SpawnPopups());
             }
             else
             {
                 YandexGame.savesData.PopupsAvailable = false;
+                YandexGame.SaveProgress();
                 StopSpawning();
             }
         }
