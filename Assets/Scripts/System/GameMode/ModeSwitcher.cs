@@ -15,9 +15,10 @@ namespace WKMR
         [SerializeField] private Kid _kid;
         [SerializeField] private SurgeryMessage _message;
 
-        private bool _isSurgery;
         private DefaultMode _defaultMode;
         private SurgeryMode _surgeryMode;
+        
+        public bool IsSurgery { get; private set; }
 
         private void Awake()
         {
@@ -27,6 +28,10 @@ namespace WKMR
             _surgeryMode = new(_image, _kid, _surgeryComponents, _defaultComponents);
         }
 
+        private void OnEnable() => ModeManager.Instance.ModeChanged += OnModeChanged;
+
+        private void OnDisable() => ModeManager.Instance.ModeChanged -= OnModeChanged;
+
         public void SetMode()
         {
             if (YandexGame.savesData.ReadyForSurgery == false)
@@ -35,7 +40,7 @@ namespace WKMR
                 return;
             }
 
-            if (_isSurgery)
+            if (IsSurgery)
                 SetDefaultMode();
             else
                 SetSurgeonMode();
@@ -43,7 +48,7 @@ namespace WKMR
 
         public void SetDefaultMode()
         {
-            _isSurgery = false;
+            IsSurgery = false;
             _defaultMode.Enter();
             SwitchIcon(_surgeryIcon);
         }
@@ -56,7 +61,7 @@ namespace WKMR
 
         private void SetSurgeonMode()
         {
-            _isSurgery = true;
+            IsSurgery = true;
             _surgeryMode.Enter();
             SwitchIcon(_defaultIcon);
         }
@@ -72,5 +77,11 @@ namespace WKMR
         }
 
         private void SwitchIcon(Sprite sprite) => _image.sprite = sprite;
+
+        private void OnModeChanged()
+        {
+            if (IsSurgery && YandexGame.savesData.SurgeryRefused)
+                SetDefaultMode();
+        }
     }
 }

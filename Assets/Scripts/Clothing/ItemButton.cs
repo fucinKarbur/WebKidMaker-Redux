@@ -10,7 +10,7 @@ namespace WKMR
     public class ItemButton : MonoBehaviour
     {
         [SerializeField] protected ItemData Item;
-        [SerializeField] protected ClothContainer Container;
+        [SerializeField] protected ItemContainer Container;
         [SerializeField] protected ItemTemplate Template;
 
         [SerializeField] private Palette _palette;
@@ -20,7 +20,7 @@ namespace WKMR
         private Button _button;
         private ColoringButton _coloringButton;
 
-        public ClothContainer ClothContainer => Container;
+        public ItemContainer ClothContainer => Container;
         public ItemData ItemData => Item;
         public Image Image => _image;
 
@@ -61,15 +61,17 @@ namespace WKMR
 
         public bool TryToSpawn()
         {
-            if (Container.gameObject.activeInHierarchy)
+            if (Container.gameObject.activeInHierarchy == false)
             {
-                return true;
-            }
-            else
-            {
-                MessageManager.Instance.ShowMessage(ErrorType.KidClosed);
+                if (ModeManager.Instance.IsSurgery)
+                    MessageManager.Instance.ShowMessage(ErrorType.IsSurgery);
+                else
+                    MessageManager.Instance.ShowMessage(ErrorType.KidClosed);
+
                 return false;
             }
+            
+            return true;
         }
     }
 }

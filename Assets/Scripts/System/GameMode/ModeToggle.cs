@@ -7,7 +7,8 @@ namespace WKMR
     [RequireComponent(typeof(Toggle))]
     public class ModeToggle : MonoBehaviour
     {
-        [SerializeField] private SurgeryMessage _switcher;
+        [SerializeField] private ModeManager _manager;
+        [SerializeField] private Toggle _liteModeToggle;
 
         private Toggle _toggle;
 
@@ -15,6 +16,11 @@ namespace WKMR
 
         private void OnEnable() => _toggle.isOn = YandexGame.savesData.ReadyForSurgery;
 
-        public void OnValueChanged() => _switcher.ChangeMind(_toggle.isOn);
+        public void OnValueChanged()
+        {
+            _manager.ChangeMind(_toggle.isOn);
+
+            _liteModeToggle.interactable = _toggle.isOn;
+        }
     }
 }

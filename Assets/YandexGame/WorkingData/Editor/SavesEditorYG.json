@@ -1,11 +1,12 @@
 {
-    "idSave": 2803,
+    "idSave": 2952,
     "isFirstSession": false,
-    "language": "en",
+    "language": "ru",
     "promptDone": false,
     "ReadyForSurgery": true,
     "SurgeryRefused": false,
+    "LiteMode": false,
     "PopupsAvailable": true,
     "SFXVolume": 1.0,
-    "MusicVolume": 1.0
+    "MusicVolume": 0.4061344861984253
 }

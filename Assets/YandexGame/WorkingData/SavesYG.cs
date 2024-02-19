@@ -14,6 +14,8 @@ namespace YG
 
         public bool ReadyForSurgery;
         public bool SurgeryRefused;
+        public bool LiteMode;
+
         public bool PopupsAvailable;
 
         public float SFXVolume;
@@ -27,7 +29,9 @@ namespace YG
         public SavesYG()
         {
             ReadyForSurgery = false;
-            ReadyForSurgery = false;
+            SurgeryRefused = false;
+            LiteMode = false;
+
             PopupsAvailable = true;
 
             SFXVolume = 1;

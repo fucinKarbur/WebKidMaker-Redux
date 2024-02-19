@@ -5,7 +5,7 @@ namespace WKMR
 {
     public class ClearButton : MonoBehaviour
     {
-        [SerializeField] private List<ClothContainer> _containers;
+        [SerializeField] private List<ItemContainer> _containers;
 
         public void Clear()
         {

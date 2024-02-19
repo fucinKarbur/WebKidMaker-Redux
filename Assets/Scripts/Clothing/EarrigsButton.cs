@@ -4,7 +4,7 @@ namespace WKMR
 {
     public class EarrigsButton : ItemButton
     {
-        [SerializeField] private ClothContainer _earsContainer;
+        [SerializeField] private ItemContainer _earsContainer;
 
         public override void Spawn()
         {

@@ -22,15 +22,12 @@ namespace WKMR
 
         private void CreateSource()
         {
-            var source = CreateSource(GetRandomBgClip());
+            var source = CreateSource(_assets.SoundClips[0]);
             source.loop = true;
             source.playOnAwake = true;
             source.Play();
 
             Sources.Add(source);
         }
-
-        private SoundClip GetRandomBgClip()
-            => _assets.SoundClips[Random.Range(0, _assets.SoundClips.Count)];
     }
 }

@@ -12,7 +12,7 @@ namespace WKMR
         [SerializeField] private Material _selected;
 
         private ItemButton _button;
-        private ClothContainer _container;
+        private ItemContainer _container;
         private ItemData _item;
         private Image _image;
         private Material _default;

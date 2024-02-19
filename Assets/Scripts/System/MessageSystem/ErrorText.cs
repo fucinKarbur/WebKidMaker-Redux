@@ -49,12 +49,17 @@ namespace WKMR.Assets.Scripts.System.MessageSystem
                     { Tr, "bu modu iptal ettiniz. oyun ayarlarından\nkararı değiştirebilirsiniz." }
                 }
             },
+            { ErrorType.IsSurgery, new Dictionary<string, string>()
+                {
+                    { Ru, "сначала завершите операцию." },
+                    { En, "önce işlemi tamamlayın." },
+                    { Tr, "complete the operation first." }
+                }
+            },
         };
 
         public string GetText(ErrorType errorType)
         {
-
-            Debug.Log(YandexGame.EnvironmentData.language + " dont forget in error");
             return Language switch
             {
                 Ru => _texts[errorType][Ru],

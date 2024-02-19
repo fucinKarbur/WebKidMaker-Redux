@@ -36,6 +36,7 @@ namespace WKMR
 
         public void ShowMessage(ErrorType errorCode)
         {
+            StopAllCoroutines();
             _errorMessage.transform.position = GetPosition();
             _errorMessage.gameObject.SetActive(true);
 

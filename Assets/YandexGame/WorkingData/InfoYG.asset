@@ -18,7 +18,7 @@ MonoBehaviour:
   playerInfoSimulation:
     authorized: 1
     isMobile: 1
-    language: en
+    language: ru
     name: buyfn
     uniqueID: 666
     photo: https://justplaygames.ru/public/icon_player.png

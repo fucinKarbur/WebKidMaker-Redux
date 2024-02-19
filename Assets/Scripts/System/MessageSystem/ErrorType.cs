@@ -6,6 +6,7 @@ namespace WKMR
         NotHumanEars,
         KidClosed,
         SurgeryMessageOpened,
-        SurgeryWasRefused
+        SurgeryWasRefused,
+        IsSurgery,
     }
 }
