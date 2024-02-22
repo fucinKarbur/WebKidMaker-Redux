@@ -57,6 +57,8 @@ namespace WKMR
 
             if (Item.Colorable)
                 _coloringButton.TryToColor(spawned, _palette);
+
+                //spawned.Initialize();
         }
 
         public bool TryToSpawn()

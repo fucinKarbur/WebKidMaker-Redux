@@ -10,7 +10,7 @@ namespace WKMR
 
         public override void SetColor(Color color)
         {
-            Image.sprite = _eyesData.ChangeType(color);
+            Image.sprite = _eyesData.ChangeSprite(color);
         }
     }
 }

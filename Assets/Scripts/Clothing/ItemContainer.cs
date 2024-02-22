@@ -8,7 +8,11 @@ namespace WKMR
     {
         private readonly WaitForEndOfFrame _wait = new();
 
+        [SerializeField] private ItemType _type;
+
         public event Action Cleared;
+
+        public ItemType Type => _type;
 
         public void Reset()
         {

@@ -9,7 +9,7 @@ namespace WKMR
         Pants,
         Scirt,
         Neck,
-        Socks,
+        RSock,
         Tights,
         Shoes,
         Hat,
@@ -34,6 +34,9 @@ namespace WKMR
         Mouth,
         Ears,
         HumEars,
-        
+
+        //CLOTH AGAIN
+        Shirt,
+        LSock,     
     }
 }

@@ -1,4 +1,7 @@
 ﻿
+using UnityEngine;
+using WKMR;
+
 namespace YG
 {
     [System.Serializable]
@@ -21,11 +24,9 @@ namespace YG
         public float SFXVolume;
         public float MusicVolume;
 
+        //public Texture2D[] KidTextures;
+        public byte[][] KidInBytes;
 
-        // Поля (сохранения) можно удалять и создавать новые. При обновлении игры сохранения ломаться не должны
-
-
-        // Вы можете выполнить какие то действия при загрузке сохранений
         public SavesYG()
         {
             ReadyForSurgery = false;
@@ -36,6 +37,9 @@ namespace YG
 
             SFXVolume = 1;
             MusicVolume = .5f;
+
+            KidInBytes = new byte[0][];
+            //KidTextures = new Texture2D[0];
         }
     }
 }

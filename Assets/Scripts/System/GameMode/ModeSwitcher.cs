@@ -28,7 +28,7 @@ namespace WKMR
             _surgeryMode = new(_image, _kid, _surgeryComponents, _defaultComponents);
         }
 
-        private void OnEnable() => ModeManager.Instance.ModeChanged += OnModeChanged;
+        private void Start() => ModeManager.Instance.ModeChanged += OnModeChanged;
 
         private void OnDisable() => ModeManager.Instance.ModeChanged -= OnModeChanged;
 
