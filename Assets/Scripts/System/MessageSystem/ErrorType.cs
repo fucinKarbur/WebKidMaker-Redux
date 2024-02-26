@@ -8,5 +8,10 @@ namespace WKMR
         SurgeryMessageOpened,
         SurgeryWasRefused,
         IsSurgery,
+        FeedbackFileError,
+        FeedbackSending,
+        FeedbackShotError,
+        FeedbackSubmitted,
+        FeedbackError,
     }
 }

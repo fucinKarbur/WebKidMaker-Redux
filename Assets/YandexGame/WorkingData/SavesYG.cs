@@ -25,7 +25,9 @@ namespace YG
         public float MusicVolume;
 
         //public Texture2D[] KidTextures;
-        public byte[][] KidInBytes;
+        public byte[][] Kids;
+        public string[] Names;
+        public int[] Healthes;
 
         public SavesYG()
         {
@@ -38,8 +40,9 @@ namespace YG
             SFXVolume = 1;
             MusicVolume = .5f;
 
-            KidInBytes = new byte[0][];
-            //KidTextures = new Texture2D[0];
+            Kids = new byte[0][];
+            Names = new string[0];
+            Healthes = new int[0];
         }
     }
 }

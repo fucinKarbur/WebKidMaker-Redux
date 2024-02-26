@@ -18,8 +18,6 @@ namespace WKMR
         [SerializeField] private Vector3 _scale;
         [SerializeField] private Vector3 _rotation;
 
-        public event Action Performed;
-
         public IEnumerator Play()
         {
             _image.transform.localPosition = _startPoint.position;
@@ -29,6 +27,11 @@ namespace WKMR
 
             _image.transform.DOMove(_startPoint.position, .1f);
             _image.transform.DOMove(_endPoint.position, _duration * 2);
+        }
+
+        public void Stop()
+        {
+            _image.transform.localPosition = _endPoint.position;
         }
 
         public void SetImage(Texture2D texture)

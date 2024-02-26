@@ -1,37 +1,34 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using YG;
 
 namespace WKMR
 {
     public class PauseBeforeAds : MonoBehaviour
     {
-        [SerializeField] private SoundAssets[] _assets;
-        [SerializeField] private EventSystem _eventSystem;
+        [SerializeField] private EventSystem _system;
+
+        private void Awake()
+        {
+            if (YandexGame.SDKEnabled == false)
+                Destroy(gameObject);
+        }
 
         public void OnTimerStart()
         {
-            _eventSystem.enabled = false;
+            _system.enabled = false;
         }
 
         public void OnAdStart()
         {
-            MuteSources();
-            _eventSystem.enabled = false;
+            AudioListener.volume = 0;
+            _system.enabled = false;
         }
 
         public void OnAdClose()
         {
-            MuteSources(false);
-            _eventSystem.enabled = true;
-        }
-
-        private void MuteSources(bool enable = true)
-        {
-            foreach (var asset in _assets)
-            {
-                foreach (var source in asset.Pool.Sources)
-                    source.mute = enable;
-            }
+            AudioListener.volume = 1;
+            _system.enabled = true;
         }
     }
 }

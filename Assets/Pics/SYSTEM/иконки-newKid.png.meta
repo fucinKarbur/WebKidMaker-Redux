@@ -131,7 +131,7 @@ TextureImporter:
         width: 155
         height: 397
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -152,7 +152,7 @@ TextureImporter:
         width: 155
         height: 397
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -173,7 +173,7 @@ TextureImporter:
         width: 155
         height: 193
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,6 +181,27 @@ TextureImporter:
       bones: []
       spriteID: 8b3191fb9bef4064ca75b618b74087f5
       internalID: 796966326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0438\u043A\u043E\u043D\u043A\u0438-newKid_3"
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 406
+        width: 417
+        height: 403
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8401877828cb12a4c81469f9ed850118
+      internalID: 1786378760
       vertices: []
       indices: 
       edges: []
@@ -199,6 +220,7 @@ TextureImporter:
       "\u0438\u043A\u043E\u043D\u043A\u0438-newKid_0": -1384525985
       "\u0438\u043A\u043E\u043D\u043A\u0438-newKid_1": -1513202814
       "\u0438\u043A\u043E\u043D\u043A\u0438-newKid_2": 1267644910
+      "\u0438\u043A\u043E\u043D\u043A\u0438-newKid_3": 1786378760
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

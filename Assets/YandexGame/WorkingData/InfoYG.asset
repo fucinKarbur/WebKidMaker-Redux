@@ -26,7 +26,7 @@ MonoBehaviour:
   showFirstAd: 1
   rewardedAfterClosing: 1
   adDisplayCalls: 0
-  fullscreenAdInterval: 120
+  fullscreenAdInterval: 180
   durationOfAdSimulation: 0.5
   loadAdWithDelaySimulation: 3
   testErrorOfRewardedAdsInEditor: 0
@@ -247,6 +247,7 @@ MonoBehaviour:
   fontsTMP:
     defaultFont:
     - {fileID: 11400000, guid: 04e00c2d7f03f11439e472409c6bbec6, type: 2}
+    - {fileID: 11400000, guid: 81ba3abae9b306f4ba4a71f011307e54, type: 2}
     ru: []
     en: []
     tr: []

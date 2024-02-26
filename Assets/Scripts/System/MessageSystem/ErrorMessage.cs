@@ -1,8 +1,7 @@
 using TMPro;
 using UnityEngine;
-using WKMR.Assets.Scripts.System.MessageSystem;
 
-namespace WKMR
+namespace WKMR.System
 {
     public class ErrorMessage : MonoBehaviour
     {

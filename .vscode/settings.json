@@ -13,5 +13,6 @@
     "unity-code-snippets.autoComplete.experimentalAttributes": true,
     "editor.defaultFoldingRangeProvider": "visualstudiotoolsforunity.vstuc",
     "files.autoSave": "afterDelay",
-    "files.autoSaveDelay": 100
+    "files.autoSaveDelay": 100,
+    "dotnet.defaultSolution": "NEW_WKM.sln"
 }

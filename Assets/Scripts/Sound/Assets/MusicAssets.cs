@@ -1,24 +1,32 @@
+using UnityEngine;
+
 namespace WKMR
 {
     public class MusicAssets : SoundAssets
     {
-        private static MusicAssets _instance;
         protected MusicPool _sourcePool;
+
+        private AudioClip _currentClip;
 
         private void Awake()
         {
-            if (_instance != null && _instance != this)
+            _sourcePool = new MusicPool(Container, this);
+            SourcePool = _sourcePool;
+        }
+
+        public void ChangeMusic(AudioClip clip = null)
+        {
+            if (clip == null)
             {
-                Destroy(gameObject);
+                _sourcePool.Sources[0].clip = _currentClip;
             }
             else
             {
-                _instance = this;
-                DontDestroyOnLoad(gameObject);
+                _currentClip = _sourcePool.Sources[0].clip;
+                _sourcePool.Sources[0].clip = clip;
             }
 
-            _sourcePool = new MusicPool (Container, this);
-            SourcePool = _sourcePool;
+            _sourcePool.Sources[0].Play();
         }
     }
 }

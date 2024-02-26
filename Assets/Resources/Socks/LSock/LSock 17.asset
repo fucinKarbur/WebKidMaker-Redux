@@ -15,5 +15,5 @@ MonoBehaviour:
   _type: 27
   _icon: {fileID: 33207986, guid: a31b4355d6771b34594c9573457ce032, type: 3}
   _colorable: 1
-  _offset: {x: -10, y: -99, z: 0}
+  _offset: {x: -10, y: -103, z: 0}
   _path: Socks/LSock

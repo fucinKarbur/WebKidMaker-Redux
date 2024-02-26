@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using YG;
 
-namespace WKMR.Assets.Scripts.System.MessageSystem
+namespace WKMR.System
 {
     public class ErrorText
     {
@@ -52,8 +52,43 @@ namespace WKMR.Assets.Scripts.System.MessageSystem
             { ErrorType.IsSurgery, new Dictionary<string, string>()
                 {
                     { Ru, "сначала завершите операцию." },
-                    { En, "önce işlemi tamamlayın." },
-                    { Tr, "complete the operation first." }
+                    { En, "complete the operation first." },
+                    { Tr, "önce işlemi tamamlayın." }
+                }
+            },
+            { ErrorType.FeedbackFileError, new Dictionary<string, string>()
+                {
+                    { Ru, "Ошибка: Не удалось прикрепить файл к отчету!\n" },
+                    { En, "Error: Failed to attach file to report!\n" },
+                    { Tr, "Hata oluştu: Rapora dosya eklenemedi!\n" }
+                }
+            },
+            { ErrorType.FeedbackSubmitted, new Dictionary<string, string>()
+                {
+                    { Ru, "Отзыв успешно отправлен!" },
+                    { En, "Feedback submitted successfully!" },
+                    { Tr, "Geri bildirim başarıyla gönderildi!" }
+                }
+            },
+            { ErrorType.FeedbackSending, new Dictionary<string, string>()
+                {
+                    { Ru, "Отправка..." },
+                    { En, "Submitting..." },
+                    { Tr, "Gönderiyorum..." }
+                }
+            },
+            { ErrorType.FeedbackError, new Dictionary<string, string>()
+                {
+                    { Ru, "Ошибка: Не удалось загрузить отчет!\n" },
+                    { En, "Error: Failed to upload report!\n " },
+                    { Tr, "Hata oluştu: Rapor yüklenemedi!\n" }
+                }
+            },
+            { ErrorType.FeedbackShotError, new Dictionary<string, string>()
+                {
+                    { Ru, "Ошибка: Не удалось сделать снимок экрана!\nПодробнее смотрите журнал." },
+                    { En, "Error: Failed to capture screenshot!\nSee log for more detail." },
+                    { Tr, "Hata: Ekran görüntüsü alınamadı!\nDaha fazla ayrıntı için günlüğe bakın." }
                 }
             },
         };

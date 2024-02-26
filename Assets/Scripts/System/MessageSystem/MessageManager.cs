@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace WKMR
+namespace WKMR.System
 {
     public class MessageManager : MonoBehaviour
     {

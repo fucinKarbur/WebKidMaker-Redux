@@ -13,22 +13,12 @@ namespace WKMR
         private void Awake()
         {
             if (Instance == null)
-            {
                 Instance = this;
-                DontDestroyOnLoad(gameObject);
-            }
             else
-            {
                 Destroy(gameObject);
-            }
         }
 
-        private void Start()
-        {
-            //Cursor.lockState = CursorLockMode.Confined;
-            Debug.Log("before build change lockstate for cursor");
-            ChangeCursor(CursorType.Default);
-        }
+        private void Start() => ChangeCursor(CursorType.Default);
 
         public void ChangeCursor(CursorType type)
         {
