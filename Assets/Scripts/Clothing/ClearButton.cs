@@ -11,7 +11,7 @@ namespace WKMR
         {
             foreach (var container in _containers)
                 if (container.gameObject.activeInHierarchy)
-                    container.Reset();
+                    container.Clear();
         }
     }
 }

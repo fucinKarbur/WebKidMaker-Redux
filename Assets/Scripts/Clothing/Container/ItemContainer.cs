@@ -15,25 +15,27 @@ namespace WKMR
 
         public ItemType Type => _type;
 
-        public void Reset()
+        public void Clear()
         {
             foreach (var item in GetComponentsInChildren<ItemTemplate>())
                 Destroy(item.gameObject);
 
-            StartCoroutine(OnReseted());
+            StartCoroutine(OnCleared());
         }
 
-        public void Reset(ItemData data)
+        public void Clear(ItemData data)
         {
             var templates = GetComponentsInChildren<ItemTemplate>().Where(template => template.Item == data);
 
             foreach (var template in templates)
                 Destroy(template.gameObject);
 
-            StartCoroutine(OnReseted());
+            StartCoroutine(OnCleared());
         }
 
-        private IEnumerator OnReseted()
+        public virtual bool HasItem() => GetComponentsInChildren<ItemTemplate>().FirstOrDefault(template => template.Item.Type == _type) != null;
+
+        private IEnumerator OnCleared()
         {
             yield return _wait;
             Cleared?.Invoke();

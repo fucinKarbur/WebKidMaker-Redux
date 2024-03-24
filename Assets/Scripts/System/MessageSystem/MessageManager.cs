@@ -34,6 +34,16 @@ namespace WKMR.System
             _errorMessage.gameObject.SetActive(false);
         }
 
+        public void ShowMessage(ErrorType errorCode, Vector3 position)
+        {
+            StopAllCoroutines();
+            _errorMessage.transform.position = position;
+            _errorMessage.gameObject.SetActive(true);
+
+            _errorMessage.Show(errorCode);
+            StartCoroutine(HideMessageAfterDelay());
+        }
+
         public void ShowMessage(ErrorType errorCode)
         {
             StopAllCoroutines();

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 23
   _icon: {fileID: -1229248132, guid: 7cf4fbed6a8250b4c818d42cbd2fc012, type: 3}
-  _colorable: 0
+  _colorable: 1
   _offset: {x: 0, y: 0, z: 0}
   _path: Face/Mouth

@@ -13,5 +13,7 @@ namespace WKMR
         FeedbackShotError,
         FeedbackSubmitted,
         FeedbackError,
+        NotEnoughItems,
+        NotEnoughOrgans,
     }
 }

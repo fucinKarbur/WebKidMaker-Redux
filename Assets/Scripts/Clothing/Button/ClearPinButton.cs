@@ -22,7 +22,7 @@ namespace WKMR
 
         public void ClearPins()
         {
-            _container.Reset(_pinData);
+            _container.Clear(_pinData);
             _status.OnCleared(_pinData);
         }
     }

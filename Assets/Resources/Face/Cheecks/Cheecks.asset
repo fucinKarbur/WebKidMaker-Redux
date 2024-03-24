@@ -15,5 +15,5 @@ MonoBehaviour:
   _type: 22
   _icon: {fileID: -354550986, guid: 01eeb63b991c40f40837c73bdcd9fd75, type: 3}
   _colorable: 1
-  _offset: {x: 8, y: -14, z: 0}
+  _offset: {x: 10, y: -7, z: 0}
   _path: Face/Cheecks

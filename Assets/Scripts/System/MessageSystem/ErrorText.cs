@@ -91,6 +91,20 @@ namespace WKMR.System
                     { Tr, "Hata: Ekran görüntüsü alınamadı!\nDaha fazla ayrıntı için günlüğe bakın." }
                 }
             },
+            { ErrorType.NotEnoughItems, new Dictionary<string, string>()
+                {
+                    { Ru, "Недостоточно предметов\nдля завершения кида!" },
+                    { En, "Not enough items to\ncomplete the kid! " },
+                    { Tr, "Atışı tamamlamak için\nyeterli eşya yok!" }
+                }
+            },
+            { ErrorType.NotEnoughOrgans, new Dictionary<string, string>()
+                {
+                    { Ru, "У вас включен режим операции.\nДобавьте хотя бы несколько органов!" },
+                    { En, "You have surgery mode enabled.\nAdd at least a few organs!" },
+                    { Tr, "Ameliyat modunu etkinleştirdiniz.\nEn azından birkaç organ ekleyin!" }
+                }
+            },
         };
 
         public string GetText(ErrorType errorType)

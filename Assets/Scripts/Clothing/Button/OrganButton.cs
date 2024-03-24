@@ -33,7 +33,7 @@ namespace WKMR
         {
             if (TryToSpawn())
             {
-                _container.Reset();
+                _container.Clear();
 
                 var spawned = Instantiate(_template, _container.transform.position, Quaternion.identity, _container.transform);
                 SetOrgan(spawned);

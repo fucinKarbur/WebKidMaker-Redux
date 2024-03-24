@@ -1,3 +1,4 @@
+using System.Linq;
 using UnityEngine;
 
 namespace WKMR
@@ -13,6 +14,11 @@ namespace WKMR
             var template = GetComponentInChildren<OrganTemplate>();
 
             return template != null && template.Organ.IsHealth;
+        }
+
+        public override bool HasItem()
+        {
+            return GetComponentInChildren<OrganTemplate>() != null;
         }
     }
 }
