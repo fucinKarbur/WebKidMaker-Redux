@@ -23,6 +23,7 @@ namespace YG
 
         public float SFXVolume;
         public float MusicVolume;
+        public bool AutoBGPlay;
 
         //public Texture2D[] KidTextures;
         public byte[][] Kids;
@@ -39,6 +40,7 @@ namespace YG
 
             SFXVolume = 1;
             MusicVolume = .5f;
+            AutoBGPlay = true;
 
             Kids = new byte[0][];
             Names = new string[0];
