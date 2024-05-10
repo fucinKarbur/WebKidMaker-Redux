@@ -3,26 +3,30 @@ using UnityEngine.UI;
 using WKMR.Coloring;
 using WKMR.System;
 using YG;
+using Zenject;
 
 namespace WKMR
 {
     [RequireComponent(typeof(Button))]
-    [RequireComponent(typeof(ColoringButton))]
     public class OrganButton : MonoBehaviour
     {
         [SerializeField] private OrganData[] _organs;
         [SerializeField] private OrganContainer _container;
         [SerializeField] private OrganTemplate _template;
-        [SerializeField] private Palette _palette;
 
         private Button _button;
-        private ColoringButton _coloringButton;
+        private Colorer _colorer;
         private int _index = -1;
+
+        [Inject]
+        private void Construct(CommonPalette palette)
+        {
+            _colorer = new(palette);
+        }
 
         private void Awake()
         {
             _button = GetComponent<Button>();
-            _coloringButton = GetComponent<ColoringButton>();
         }
 
         private void OnEnable() => _button.onClick.AddListener(Spawn);
@@ -63,7 +67,7 @@ namespace WKMR
             spawned.transform.localPosition += organ.Offset;
 
             if (organ.Colorable)
-                _coloringButton.TryToColor(spawned, _palette);
+                _colorer.TryToColor(spawned);
         }
 
         private OrganData GetOrgan()

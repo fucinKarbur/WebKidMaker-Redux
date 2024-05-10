@@ -6,13 +6,27 @@ namespace WKMR.Coloring
 {
     public class Palette : MonoBehaviour, IDeselectHandler
     {
+        [SerializeField] private GameObject[] _variants;
+
         private Color _color;
 
-        public event Action<Color> ColorSend;
+        public event Action<Color> ColorSelected;
 
-        private void OnEnable() => _color = Color.white;
+        private void OnEnable()
+        {
+            _color = Color.white;
 
-        private void OnDisable() => ColorSend = null;
+            var palette = _variants[UnityEngine.Random.Range(0, _variants.Length)];
+            palette.SetActive(true);
+        }
+
+        private void OnDisable()
+        {
+            ColorSelected = null;
+            
+            foreach (var variant in _variants)
+                variant.SetActive(false);
+        }
 
         public void OnDeselect(BaseEventData eventData) => Deselect(eventData as PointerEventData);
 
@@ -24,7 +38,7 @@ namespace WKMR.Coloring
 
         private void Disable()
         {
-            ColorSend?.Invoke(_color);
+            ColorSelected?.Invoke(_color);
             gameObject.SetActive(false);
         }
 

@@ -2,34 +2,38 @@ using UnityEngine;
 using UnityEngine.UI;
 using WKMR.Coloring;
 using WKMR.System;
+using Zenject;
 
 namespace WKMR
 {
     [RequireComponent(typeof(Image))]
     [RequireComponent(typeof(Button))]
-    [RequireComponent(typeof(ColoringButton))]
     public class ItemButton : MonoBehaviour
     {
         [SerializeField] protected ItemData Item;
         [SerializeField] protected ItemContainer Container;
         [SerializeField] protected ItemTemplate Template;
 
-        [SerializeField] private Palette _palette;
         [SerializeField] private ClearButton _clearButton;
 
         private Image _image;
         private Button _button;
-        private ColoringButton _coloringButton;
+        protected Colorer _colorer;
 
         public ItemContainer ClothContainer => Container;
         public ItemData ItemData => Item;
         public Image Image => _image;
 
+        [Inject]
+        private void Construct(CommonPalette palette)
+        {
+            _colorer = new(palette);
+        }
+
         private void Awake()
         {
             _image = GetComponent<Image>();
             _button = GetComponent<Button>();
-            _coloringButton = GetComponent<ColoringButton>();
 
             _image.sprite = Item.Icon;
         }
@@ -57,9 +61,9 @@ namespace WKMR
             spawned.transform.localPosition += Item.Offset;
 
             if (Item.Colorable)
-                _coloringButton.TryToColor(spawned, _palette);
+                _colorer.TryToColor(spawned);
 
-                //spawned.Initialize();
+            //spawned.Initialize();
         }
 
         public bool TryToSpawn()
@@ -73,7 +77,7 @@ namespace WKMR
 
                 return false;
             }
-            
+
             return true;
         }
     }
