@@ -7,7 +7,7 @@ namespace WKMR
 {
     public class PlacePinButton : MonoBehaviour
     {
-        private PinButton _pinButton;
+        /* private PinButton _pinButton;
 
         private Transform[] _spawnPoints => _pinButton.SpawnPoints;
         private Transform _lastPin => _pinButton.LastPin.transform;
@@ -30,6 +30,6 @@ namespace WKMR
             int z = Random.Range(0, 360);
 
             return Quaternion.Euler(0, 0, z);
-        }
+        } */
     }
 }

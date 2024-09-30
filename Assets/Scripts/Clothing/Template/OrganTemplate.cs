@@ -1,8 +1,9 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using YG;
 
-namespace WKMR
+namespace WKMR.Clothing
 {
     public class OrganTemplate : ItemTemplate, IPointerClickHandler
     {

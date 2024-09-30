@@ -3,7 +3,7 @@ using System.Collections;
 using System.Linq;
 using UnityEngine;
 
-namespace WKMR
+namespace WKMR.Clothing
 {
     public class ItemContainer : MonoBehaviour
     {
@@ -34,6 +34,12 @@ namespace WKMR
         }
 
         public virtual bool HasItem() => GetComponentsInChildren<ItemTemplate>().FirstOrDefault(template => template.Item.Type == _type) != null;
+
+        public bool HasItem(ItemData data, out ItemTemplate template)
+        {
+            template = GetComponentsInChildren<ItemTemplate>().FirstOrDefault(template => template.Item == data);
+            return template != null;
+        }
 
         private IEnumerator OnCleared()
         {

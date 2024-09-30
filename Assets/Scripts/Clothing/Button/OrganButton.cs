@@ -10,7 +10,7 @@ namespace WKMR
     [RequireComponent(typeof(Button))]
     public class OrganButton : MonoBehaviour
     {
-        [SerializeField] private OrganData[] _organs;
+        /* [SerializeField] private OrganData[] _organs;
         [SerializeField] private OrganContainer _container;
         [SerializeField] private OrganTemplate _template;
 
@@ -67,7 +67,7 @@ namespace WKMR
             spawned.transform.localPosition += organ.Offset;
 
             if (organ.Colorable)
-                _colorer.TryToColor(spawned);
+                _colorer.Colorize(spawned);
         }
 
         private OrganData GetOrgan()
@@ -78,6 +78,6 @@ namespace WKMR
                 _index = 0;
 
             return _organs[_index];
-        }
+        } */
     }
 }

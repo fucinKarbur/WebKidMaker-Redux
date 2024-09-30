@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using WKMR.Clothing;
 using Zenject;
 
 namespace WKMR.Coloring
@@ -11,7 +12,7 @@ namespace WKMR.Coloring
 
         public Colorer(Palette palette) => _palette = palette;
 
-        public void TryToColor(ItemTemplate template)
+        public void Colorize(Clothing.ItemTemplate template)
         {
             if (_palette == null)
             {

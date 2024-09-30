@@ -1,20 +1,26 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using WKMR.Coloring;
 
 namespace WKMR.System.TabMenu
 {
     public class PageGroup : MonoBehaviour
     {
+        [field: SerializeField] public Palette Palette { get; private set; }
         [SerializeField] private PageControl _control;
         [SerializeField] private List<Page> _pages;
-        [SerializeField] private TMP_Text _count;
+        private TMP_Text _count;
 
         public Page Current { get; private set; }
         public int Index { get; private set; } = 0;
 
         private void Awake()
         {
+            _count = _control.Count;
+        }
+
+        private void Start() {
             _control.gameObject.SetActive(_pages.Count > 1);
 
             if (Current == null && _pages.Count != 0)

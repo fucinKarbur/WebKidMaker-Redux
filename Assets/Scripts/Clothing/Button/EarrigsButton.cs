@@ -3,9 +3,9 @@ using WKMR.System;
 
 namespace WKMR
 {
-    public class EarrigsButton : ItemButton
+    public class EarrigsButton /* : ItemButton */
     {
-        [SerializeField] private ItemContainer _earsContainer;
+        /* [SerializeField] private ItemContainer _earsContainer;
 
         public override void Spawn()
         {
@@ -42,6 +42,6 @@ namespace WKMR
                 MessageManager.Instance.ShowMessage(ErrorType.NotHumanEars);
                 return false;
             }
-        }
+        } */
     }
 }

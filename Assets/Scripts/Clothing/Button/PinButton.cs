@@ -5,9 +5,9 @@ using Zenject;
 
 namespace WKMR
 {
-    public class PinButton : ItemButton
+    public class PinButton /* : ItemButton */
     {
-        [SerializeField] private Transform[] _spawnPoints;
+        /* [SerializeField] private Transform[] _spawnPoints;
 
         private PlacePinButton _placeButton;
         private ClearPinButton _clearPinButton;
@@ -58,6 +58,6 @@ namespace WKMR
                 _placeButton.gameObject.SetActive(false);
                 _clearPinButton.gameObject.SetActive(false);
             }
-        }
+        } */
     }
 }

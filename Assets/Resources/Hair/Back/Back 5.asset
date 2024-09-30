@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _type: 16
   _icon: {fileID: 574640678, guid: 0ba21d53913686e43b7403003d08a665, type: 3}
-  _colorable: 0
-  _offset: {x: 0, y: 0, z: 0}
+  _colorable: 1
+  _offset: {x: 67, y: -134, z: 0}
   _path: Hair/Back

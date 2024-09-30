@@ -6,7 +6,7 @@ namespace WKMR
 {
     public class ClearPinButton : MonoBehaviour
     {
-        private PinButton _pinButton;
+        /* private PinButton _pinButton;
         private ItemData _pinData;
         private ItemContainer _container;
         
@@ -24,6 +24,6 @@ namespace WKMR
         {
             _container.Clear(_pinData);
             _status.OnCleared(_pinData);
-        }
+        } */
     }
 }

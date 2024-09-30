@@ -908,7 +908,7 @@ TextureImporter:
         width: 212
         height: 219
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -916,6 +916,27 @@ TextureImporter:
       bones: []
       spriteID: 74be04b5e08916b4d937e2f1cc499be4
       internalID: 738764880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u0438\u043A\u043E\u043D\u043A\u0438-icon_38"
+      rect:
+        serializedVersion: 2
+        x: 284
+        y: 1122
+        width: 122
+        height: 125
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24096d773d0f82e4682d66e334f6d22e
+      internalID: -228128876
       vertices: []
       indices: 
       edges: []
@@ -963,6 +984,7 @@ TextureImporter:
       "\u0438\u043A\u043E\u043D\u043A\u0438-icon_35": 456110077
       "\u0438\u043A\u043E\u043D\u043A\u0438-icon_36": -23581693
       "\u0438\u043A\u043E\u043D\u043A\u0438-icon_37": 738764880
+      "\u0438\u043A\u043E\u043D\u043A\u0438-icon_38": -228128876
       "\u0438\u043A\u043E\u043D\u043A\u0438-icon_4": -187134333
       "\u0438\u043A\u043E\u043D\u043A\u0438-icon_5": -1708349161
       "\u0438\u043A\u043E\u043D\u043A\u0438-icon_6": -1514697266

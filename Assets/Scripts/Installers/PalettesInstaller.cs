@@ -8,7 +8,7 @@ namespace WKMR
 {
     public class PalettesInstaller : MonoInstaller
     {
-        [SerializeField] private CommonPalette _commonPalette;
+        /* [SerializeField] private CommonPalette _commonPalette;
         [SerializeField] private EyePalette _eyePalette;
 
         public override void InstallBindings()
@@ -24,6 +24,6 @@ namespace WKMR
             .FromInstance(_eyePalette)
             .AsSingle()
             .NonLazy();
-        }
+        } */
     }
 }

@@ -1,7 +1,7 @@
 using System.Linq;
 using UnityEngine;
 
-namespace WKMR
+namespace WKMR.Clothing
 {
     public class OrganContainer : ItemContainer
     {

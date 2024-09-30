@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 namespace WKMR
 {
-    [RequireComponent(typeof(ItemButton))]
-    public class ButtonStatus : MonoBehaviour, IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler
+    //[RequireComponent(typeof(ItemButton))]
+    public class ButtonStatus : MonoBehaviour/* , IPointerEnterHandler, IPointerClickHandler, IPointerExitHandler */
     {
-        [SerializeField] private Material _entered;
+        /* [SerializeField] private Material _entered;
         [SerializeField] private Material _selected;
 
         private ItemButton _button;
@@ -109,6 +109,6 @@ namespace WKMR
         private void ChangeMaterial(Material material)
         {
             _image.material = material;
-        }
+        } */
     }
 }
