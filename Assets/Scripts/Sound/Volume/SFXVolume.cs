@@ -4,7 +4,7 @@ namespace WKMR
 {
     public class SFXVolume : VolumeChanger
     {
-        private void Awake() => Slider = MusicWindow.SFXSlider;
+        private void Awake() => Slider = MusicWindow.SfxSlider;
         
         protected override float GetValue() => YandexGame.savesData.SFXVolume;
 

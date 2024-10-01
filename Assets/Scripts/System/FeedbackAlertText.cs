@@ -4,6 +4,15 @@ using TMPro;
 using UnityEngine;
 using WKMR.System;
 
+/// <summary>
+/// чек где вообще используется этот класс
+/// 
+/// почему обновление текста в апдейте??
+/// 
+/// и исправь наконец эту тему с еррор тайп, хоть таблицы прикрути с переводом, 
+/// но это супер неудобно, в коде каждлую ошибку прописывать
+/// </summary>
+
 namespace WKMR
 {
     public class FeedbackAlertText : MonoBehaviour

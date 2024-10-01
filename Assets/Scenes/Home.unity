@@ -361,6 +361,7 @@ PrefabInstance:
     - {fileID: 8761956532176848424, guid: ed46889bf387e324d9b4fca5db4e4852, type: 3}
     - {fileID: 7815337969841265408, guid: ed46889bf387e324d9b4fca5db4e4852, type: 3}
     - {fileID: 3804890748032914265, guid: ed46889bf387e324d9b4fca5db4e4852, type: 3}
+    - {fileID: 152739054354860337, guid: ed46889bf387e324d9b4fca5db4e4852, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 1192856450246828574, guid: ed46889bf387e324d9b4fca5db4e4852, type: 3}
       insertIndex: -1
@@ -6408,6 +6409,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -30.421413
       objectReference: {fileID: 0}
+    - target: {fileID: 932188910271078299, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1584492843281933362, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
       propertyPath: m_Camera
       value: 
@@ -6510,6 +6515,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3232276433385152883, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3299198834369151756, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5142433750210748709, guid: 2ed6367793c335540be59074f8feaf72, type: 3}

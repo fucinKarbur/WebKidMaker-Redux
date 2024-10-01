@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -6,6 +7,11 @@ using YG;
 
 namespace WKMR.System
 {
+
+    /// <summary>
+    /// вынести визуал в отдельный класс, который будет содержать в себе и
+    /// рандомный фон\слайдер и изменение лого в зависимости от языка(опред при первом запуске)
+    /// </summary>
     public class LoadingScreen : MonoBehaviour
     {
         [SerializeField] private Slider _slider;
@@ -19,28 +25,25 @@ namespace WKMR.System
                 changer.ChangeBackground();
         }
 
-        public void LoadScene(int sceneId)
+        public async void LoadScene(int sceneId)
         {
             gameObject.SetActive(true);
-            StartCoroutine(LoadAsync(sceneId));
+            await LoadAsync(sceneId);
         }
 
-        private IEnumerator LoadAsync(int sceneId)
+        private async Task LoadAsync(int sceneId)
         {
-            AsyncOperation async = SceneManager.LoadSceneAsync(sceneId);
+            var async = SceneManager.LoadSceneAsync(sceneId);
 
-            while (async.isDone == false)
+            while (!async.isDone)
             {
-                _slider.value = async.progress;
-
-                yield return null;
+                Debug.Log(async.progress);
+                _slider.value = async.progress*100;
+                await Task.Yield(); // This effectively replaces yield return null;
             }
 
             gameObject.SetActive(false);
-            ShowAddBetweenScenes();
-            StopAllCoroutines();
+            YandexGame.FullscreenShow();
         }
-
-        private void ShowAddBetweenScenes() => YandexGame.FullscreenShow();
     }
 }

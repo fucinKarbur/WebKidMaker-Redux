@@ -34,9 +34,15 @@ namespace WKMR
         private void LoadScene(int index)
         {
             if (_screen != null)
+            {
+                _screen.gameObject.SetActive(true);
                 _screen.LoadScene(index);
+            }
             else
+            {
+                Debug.Log("Loading screen not found");
                 SceneManager.LoadScene(index);
+            }
         }
     }
 }
