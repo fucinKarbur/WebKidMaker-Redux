@@ -6507,15 +6507,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3232276433106282365, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3232276433385152883, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.71
       objectReference: {fileID: 0}
     - target: {fileID: 3232276433385152883, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3299198834369151756, guid: 2ed6367793c335540be59074f8feaf72, type: 3}
       propertyPath: m_IsActive

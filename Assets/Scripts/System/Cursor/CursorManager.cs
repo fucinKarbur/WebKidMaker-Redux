@@ -33,7 +33,7 @@ namespace WKMR
         private Texture2D GetTexture(CursorType type)
         {
             foreach (var cursor in _assets)
-                if (cursor.Name == type)
+                if (cursor.Type == type)
                     return cursor.Texture;
 
             return null;

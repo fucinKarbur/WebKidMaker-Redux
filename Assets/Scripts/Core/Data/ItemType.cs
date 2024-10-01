@@ -1,5 +1,5 @@
 
-namespace WKMR.Scriptad
+namespace WKMR
 {
     public enum ItemType
     {
@@ -9,7 +9,7 @@ namespace WKMR.Scriptad
         Pants,
         Scirt,
         Neck,
-        Socks,
+        RSock,
         Tights,
         Shoes,
         Hat,
@@ -37,5 +37,6 @@ namespace WKMR.Scriptad
 
         //CLOTH AGAIN
         Shirt,
+        LSock,     
     }
 }

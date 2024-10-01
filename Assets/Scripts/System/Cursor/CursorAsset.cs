@@ -6,10 +6,7 @@ namespace WKMR
     [Serializable]
     public class CursorAsset
     {
-        [SerializeField] private CursorType _name;
-        [SerializeField] private Texture2D _texture;
-
-        public CursorType Name => _name;
-        public Texture2D Texture => _texture;
+        [field: SerializeField] public CursorType Type { get; private set; }
+        [field: SerializeField] public Texture2D Texture { get; private set; }
     }
 }

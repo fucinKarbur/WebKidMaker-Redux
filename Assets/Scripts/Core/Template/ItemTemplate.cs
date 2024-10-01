@@ -1,33 +1,33 @@
-using System;
-using System.Linq;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace WKMR
+namespace WKMR.Clothing
 {
     [RequireComponent(typeof(Image))]
     public class ItemTemplate : MonoBehaviour
     {
-        public Image Image { get; private set; }
-        public ItemData Item { get; private set; }
+        protected Image Image;
+
+        public ItemData Item { get; protected set; }
+        public bool Initialized => Item != null;
 
         private void Awake() => Image = GetComponent<Image>();
 
-        public void SetImage(Sprite sprite)
+        public virtual void Initialize(ItemData data)
         {
-            if (sprite != null && Image != null)
-            {
-                Image.sprite = sprite;
-                Image.SetNativeSize();
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            Item = data;
+
+            gameObject.name = Item.name;
+            transform.localPosition = Vector3.zero + Item.Offset;
+            Image.sprite = Item.Icon;
+            Image.SetNativeSize();
         }
 
-        public virtual void SetColor(Color color) => Image.color = color;
-
-        public void GetItem(ItemData data) => Item = data;
+        public virtual void SetColor(Color color)
+        {
+            Image.color = color;
+        }
     }
 }
