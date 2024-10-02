@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: Hat 28
   m_EditorClassIdentifier: 
-  _type: 8
-  _icon: {fileID: -1323168648, guid: db263241e9674c64380fc90c47d2d347, type: 3}
-  _colorable: 1
-  _offset: {x: 11, y: 33, z: 0}
-  _path: Accs/Hats
+  <Type>k__BackingField: 8
+  <Icon>k__BackingField: {fileID: -1323168648, guid: db263241e9674c64380fc90c47d2d347, type: 3}
+  <Offset>k__BackingField: {x: 11, y: 33, z: 0}
+  <Path>k__BackingField: Accs/Hats
+  <Colorable>k__BackingField: 1

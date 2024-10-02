@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using WKMR.System;
 
 #if UNITY_EDITOR
 [ExecuteInEditMode]
@@ -135,7 +134,7 @@ public class proCore : MonoBehaviour
 #endif
 			makeScreenShot = false;
 
-#if UNITY_EDITOR && !UNITY_WEBPLAYER
+/* #if UNITY_EDITOR && !UNITY_WEBPLAYER
 
 			string lPathDir = Application.dataPath + "/MyScreenShots";
 
@@ -158,7 +157,7 @@ public class proCore : MonoBehaviour
 			lastScreenShotTexture = (Texture2D)UnityEditor.AssetDatabase.LoadAssetAtPath(lPath, typeof(Texture2D));
 			Debug.Log("ScreenShot saved to: " + scrPath + scrName + scrExtension + " (Editor Only Message)");
 #endif
-
+ */
 			string allScreenShots = PlayerPrefs.GetString("proScreenShotPictures");
 
 			if (allScreenShots.Equals(""))
@@ -233,7 +232,7 @@ public class proCore : MonoBehaviour
 
 		name = name.Replace("&", "_");
 
-		if (forceCustomPath.Equals(""))
+		/* if (forceCustomPath.Equals(""))
 		{
 			scrPath = Application.persistentDataPath + "/" + path + "/";
 #if UNITY_EDITOR
@@ -248,7 +247,7 @@ public class proCore : MonoBehaviour
 		if (!System.IO.Directory.Exists(scrPath))
 		{
 			System.IO.Directory.CreateDirectory(scrPath);
-		}
+		} */
 
 		scrName = name;
 

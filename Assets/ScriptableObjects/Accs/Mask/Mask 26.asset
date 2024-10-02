@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: Mask 26
   m_EditorClassIdentifier: 
-  _type: 12
-  _icon: {fileID: 953367437, guid: f7975ba5c3e6a1b4c8fb0acd164b4000, type: 3}
-  _colorable: 0
-  _offset: {x: -1, y: 12, z: 0}
-  _path: Accs/Mask
+  <Type>k__BackingField: 12
+  <Icon>k__BackingField: {fileID: 953367437, guid: f7975ba5c3e6a1b4c8fb0acd164b4000, type: 3}
+  <Offset>k__BackingField: {x: -1, y: 12, z: 0}
+  <Path>k__BackingField: Accs/Mask
+  <Colorable>k__BackingField: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: M1Jacket 5
   m_EditorClassIdentifier: 
-  _type: 1
-  _icon: {fileID: 280537783, guid: 3297604086a493c4d9de8c9e86c217c1, type: 3}
-  _colorable: 0
-  _offset: {x: -34, y: -34, z: 0}
-  _path: Jackets/M
+  <Type>k__BackingField: 1
+  <Icon>k__BackingField: {fileID: 280537783, guid: 3297604086a493c4d9de8c9e86c217c1, type: 3}
+  <Offset>k__BackingField: {x: -34, y: -34, z: 0}
+  <Path>k__BackingField: Jackets/M
+  <Colorable>k__BackingField: 0

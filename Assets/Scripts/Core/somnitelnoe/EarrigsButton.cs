@@ -1,6 +1,3 @@
-using UnityEngine;
-using WKMR.System;
-
 namespace WKMR
 {
     public class EarrigsButton /* : ItemButton */

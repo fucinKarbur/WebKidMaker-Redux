@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using WKMR.Clothing;
 using Zenject;
 
@@ -9,27 +8,36 @@ namespace WKMR.Coloring
     public class Colorer
     {
         private readonly Palette _palette;
+        private ItemTemplate _template;
 
         public Colorer(Palette palette) => _palette = palette;
 
-        public void Colorize(Clothing.ItemTemplate template)
+        public void Colorize(ItemTemplate template)
         {
-            if (_palette == null)
+            if (template.Item.Colorable)
             {
-                Debug.LogError("Palette is null");
-                return;
+                if (_palette == null)
+                {
+                    Debug.LogError("Palette is null");
+                    return;
+                }
+
+                _template = template;
+                OpenPalette();
             }
-
-            OpenPalette();
-            _palette.ColorSelected += template.SetColor;
         }
-
-        public void SetDefault(Image image) => image.color = Color.white;
 
         private void OpenPalette()
         {
             _palette.gameObject.SetActive(true);
+            _palette.ColorSelected += SetColor;
             EventSystem.current.SetSelectedGameObject(_palette.gameObject);
+        }
+
+        private void SetColor(Color color)
+        {
+            _template.SetColor(color);
+            _palette.ColorSelected -= SetColor;
         }
     }
 }

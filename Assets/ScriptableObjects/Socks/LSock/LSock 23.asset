@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: LSock 23
   m_EditorClassIdentifier: 
-  _type: 27
-  _icon: {fileID: 1262553201, guid: a31b4355d6771b34594c9573457ce032, type: 3}
-  _colorable: 0
-  _offset: {x: -10, y: -99, z: 0}
-  _path: Socks/LSock
+  <Type>k__BackingField: 27
+  <Icon>k__BackingField: {fileID: 1262553201, guid: a31b4355d6771b34594c9573457ce032, type: 3}
+  <Offset>k__BackingField: {x: -10, y: -99, z: 0}
+  <Path>k__BackingField: Socks/LSock
+  <Colorable>k__BackingField: 0

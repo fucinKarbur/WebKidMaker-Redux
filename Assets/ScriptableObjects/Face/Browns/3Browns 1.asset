@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4958f300e87a1e54992ee5ae57ad4d08, type: 3}
   m_Name: 3Browns 1
   m_EditorClassIdentifier: 
-  _type: 19
-  _icon: {fileID: -930723248, guid: 1183acf554d3ac74385196098b8b3899, type: 3}
-  _colorable: 1
-  _offset: {x: 0, y: 1, z: 0}
-  _path: Face/Browns
+  <Type>k__BackingField: 19
+  <Icon>k__BackingField: {fileID: -930723248, guid: 1183acf554d3ac74385196098b8b3899, type: 3}
+  <Offset>k__BackingField: {x: 0, y: 1, z: 0}
+  <Path>k__BackingField: Face/Browns
+  <Colorable>k__BackingField: 1

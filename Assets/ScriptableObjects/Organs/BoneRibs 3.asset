@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eb893b60fe95542a9e4378cd240a34, type: 3}
   m_Name: BoneRibs 3
   m_EditorClassIdentifier: 
-  _type: 14
-  _icon: {fileID: 1110390178, guid: 087b4d47fe49d1e4ab7168681a686c1c, type: 3}
-  _offset: {x: 4, y: -8, z: 0}
-  _colorable: 0
-  _isHealth: 0
+  <Type>k__BackingField: 14
+  <Icon>k__BackingField: {fileID: 1110390178, guid: 087b4d47fe49d1e4ab7168681a686c1c, type: 3}
+  <Offset>k__BackingField: {x: 4, y: -8, z: 0}
+  <Colorable>k__BackingField: 0
+  <IsHealth>k__BackingField: 0

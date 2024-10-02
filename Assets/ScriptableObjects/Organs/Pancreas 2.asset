@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eb893b60fe95542a9e4378cd240a34, type: 3}
   m_Name: Pancreas 2
   m_EditorClassIdentifier: 
-  _type: 4
-  _icon: {fileID: -1847911566, guid: 530e8939c2b529846a64fcf2669ca97e, type: 3}
-  _offset: {x: 7, y: 0, z: 0}
-  _colorable: 0
-  _isHealth: 1
+  <Type>k__BackingField: 4
+  <Icon>k__BackingField: {fileID: -1847911566, guid: 530e8939c2b529846a64fcf2669ca97e, type: 3}
+  <Offset>k__BackingField: {x: 7, y: 0, z: 0}
+  <Colorable>k__BackingField: 0
+  <IsHealth>k__BackingField: 1

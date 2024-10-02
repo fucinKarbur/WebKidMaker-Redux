@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4958f300e87a1e54992ee5ae57ad4d08, type: 3}
   m_Name: Back
   m_EditorClassIdentifier: 
-  _type: 16
-  _icon: {fileID: 1578065418, guid: 0ba21d53913686e43b7403003d08a665, type: 3}
-  _colorable: 0
-  _offset: {x: 8, y: -93, z: 0}
-  _path: Hair/Back
+  <Type>k__BackingField: 16
+  <Icon>k__BackingField: {fileID: 1578065418, guid: 0ba21d53913686e43b7403003d08a665, type: 3}
+  <Offset>k__BackingField: {x: 8, y: -93, z: 0}
+  <Path>k__BackingField: Hair/Back
+  <Colorable>k__BackingField: 0

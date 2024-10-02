@@ -7,9 +7,9 @@ namespace WKMR.System.TabMenu
 {
     public class PageGroup : MonoBehaviour
     {
-        [field: SerializeField] public Palette Palette { get; private set; }
         [SerializeField] private PageControl _control;
-        [SerializeField] private List<Page> _pages;
+        private List<Page> _pages;
+
         private TMP_Text _count;
 
         public Page Current { get; private set; }
@@ -18,15 +18,31 @@ namespace WKMR.System.TabMenu
         private void Awake()
         {
             _count = _control.Count;
+            GetPages();
         }
 
-        private void Start() {
+        private void Start()
+        {
             _control.gameObject.SetActive(_pages.Count > 1);
 
             if (Current == null && _pages.Count != 0)
             {
                 Current = _pages[Index];
                 UpdatePages();
+            }
+        }
+
+        private void GetPages()
+        {
+            /* if (_pages != null)
+                return; */
+
+            _pages = new List<Page>();
+
+            foreach (Transform child in transform)
+            {
+                if (child.TryGetComponent(out Page page))
+                    _pages.Add(page);
             }
         }
 

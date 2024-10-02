@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4958f300e87a1e54992ee5ae57ad4d08, type: 3}
   m_Name: LStrand 5
   m_EditorClassIdentifier: 
-  _type: 14
-  _icon: {fileID: 2028847078, guid: feecec03bbb882f46b8992c3f6b4ff1a, type: 3}
-  _colorable: 0
-  _offset: {x: 4.3, y: -81, z: 0}
-  _path: Hair/LStrand
+  <Type>k__BackingField: 14
+  <Icon>k__BackingField: {fileID: 2028847078, guid: feecec03bbb882f46b8992c3f6b4ff1a, type: 3}
+  <Offset>k__BackingField: {x: 4.3, y: -81, z: 0}
+  <Path>k__BackingField: Hair/LStrand
+  <Colorable>k__BackingField: 0

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: Shirt
   m_EditorClassIdentifier: 
-  _type: 26
-  _icon: {fileID: -809866210, guid: 8f0f2f605f281b04ea9e61d4cc396a73, type: 3}
-  _colorable: 1
-  _offset: {x: 0, y: 0, z: 0}
-  _path: TopShort/Shirts
+  <Type>k__BackingField: 26
+  <Icon>k__BackingField: {fileID: -809866210, guid: 8f0f2f605f281b04ea9e61d4cc396a73, type: 3}
+  <Offset>k__BackingField: {x: 0, y: 0, z: 0}
+  <Path>k__BackingField: TopShort/Shirts
+  <Colorable>k__BackingField: 1

@@ -1,9 +1,5 @@
 using UnityEngine;
 using UnityEngine.UI;
-using WKMR.Coloring;
-using WKMR.System;
-using YG;
-using Zenject;
 
 namespace WKMR
 {

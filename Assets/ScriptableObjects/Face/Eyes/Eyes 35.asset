@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65d5653cf14bfa940add453bc8189576, type: 3}
   m_Name: Eyes 35
   m_EditorClassIdentifier: 
-  _type: 20
-  _icon: {fileID: 846468961, guid: 63fa912dac3436442a5b1a208b8fe44a, type: 3}
-  _colorable: 0
-  _offset: {x: 5, y: -7, z: 0}
-  _path: Face/Eyes
+  <Type>k__BackingField: 20
+  <Icon>k__BackingField: {fileID: 846468961, guid: 63fa912dac3436442a5b1a208b8fe44a, type: 3}
+  <Offset>k__BackingField: {x: 5, y: -7, z: 0}
+  <Path>k__BackingField: Face/Eyes
+  <Colorable>k__BackingField: 0
   _types: []
   _colors: []

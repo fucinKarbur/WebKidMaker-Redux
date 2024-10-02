@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: top 15
   m_EditorClassIdentifier: 
-  _type: 0
-  _icon: {fileID: -1889788727, guid: e8c40dfb09dc5874f851d56f0220c3dd, type: 3}
-  _colorable: 1
-  _offset: {x: -1, y: -10, z: 0}
-  _path: TopLong
+  <Type>k__BackingField: 0
+  <Icon>k__BackingField: {fileID: -1889788727, guid: e8c40dfb09dc5874f851d56f0220c3dd, type: 3}
+  <Offset>k__BackingField: {x: -1, y: -10, z: 0}
+  <Path>k__BackingField: TopLong
+  <Colorable>k__BackingField: 1

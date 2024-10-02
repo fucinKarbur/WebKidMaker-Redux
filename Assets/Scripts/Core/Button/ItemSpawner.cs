@@ -1,6 +1,5 @@
 using System;
-using System.Linq;
-using UnityEngine;
+using WKMR.Coloring;
 using WKMR.System;
 
 namespace WKMR.Clothing
@@ -9,35 +8,33 @@ namespace WKMR.Clothing
     {
         private readonly ItemTemplate _template;
         private readonly ItemContainer _container;
+        private readonly Colorer _colorer;
 
-        public ItemSpawner(ItemTemplate template, ItemContainer container)
+        private ItemTemplate _item;
+
+        public ItemSpawner(ItemTemplate template, ItemContainer container, Colorer colorer)
         {
             _template = template;
             _container = container;
+            _colorer = colorer;
         }
 
-        public ItemTemplate Spawn(ItemData data)
+        public void Spawn(ItemData data)
         {
-            if (_container == null)
-                throw new NullReferenceException("container is null");
-
-            if (TryToSpawn())
-                if (_container.HasItem(data, out ItemTemplate template))
+            if (AbleToSpawn())
+            {
+                if (_container.HasItem(data, out _item) == false)
                 {
-                    return template;
+                    _container.Clear();
+                    _item = UnityEngine.Object.Instantiate(_template, _container.transform);
+                    _item.Initialize(data);
                 }
-                else
-                {
-                    var item = UnityEngine.Object.Instantiate(_template, _container.transform);
-                    item.Initialize(data);
 
-                    return item;
-                }
-            else
-                return null;
+                _colorer.Colorize(_item);
+            }
         }
 
-        public bool TryToSpawn()
+        public bool AbleToSpawn()
         {
             if (_container.gameObject.activeInHierarchy == false)
             {

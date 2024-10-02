@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: M2Scirt 5
   m_EditorClassIdentifier: 
-  _type: 3
-  _icon: {fileID: 1790058047, guid: 44fbb5974fc6ad6449b81c66c92b1b34, type: 3}
-  _colorable: 0
-  _offset: {x: -26, y: 83, z: 0}
-  _path: Scirts/M
+  <Type>k__BackingField: 3
+  <Icon>k__BackingField: {fileID: 1790058047, guid: 44fbb5974fc6ad6449b81c66c92b1b34, type: 3}
+  <Offset>k__BackingField: {x: -26, y: 83, z: 0}
+  <Path>k__BackingField: Scirts/M
+  <Colorable>k__BackingField: 0

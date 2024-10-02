@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace WKMR
 {
-	public class KidConverter
+    public class KidConverter
 	{
 		public Texture2D ConvertBytesToTexture(byte[] bytes)
 		{

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: Pants xs 7
   m_EditorClassIdentifier: 
-  _type: 2
-  _icon: {fileID: 1760162760, guid: f5c5ef5b8657ecb408c52a3aa57a6a5c, type: 3}
-  _colorable: 0
-  _offset: {x: -40, y: 143, z: 0}
-  _path: Pants/xs
+  <Type>k__BackingField: 2
+  <Icon>k__BackingField: {fileID: 1760162760, guid: f5c5ef5b8657ecb408c52a3aa57a6a5c, type: 3}
+  <Offset>k__BackingField: {x: -40, y: 143, z: 0}
+  <Path>k__BackingField: Pants/xs
+  <Colorable>k__BackingField: 0

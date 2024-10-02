@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32eb893b60fe95542a9e4378cd240a34, type: 3}
   m_Name: Brain 2
   m_EditorClassIdentifier: 
-  _type: 0
-  _icon: {fileID: -1734544257, guid: 530e8939c2b529846a64fcf2669ca97e, type: 3}
-  _offset: {x: 4, y: -2, z: 0}
-  _colorable: 1
-  _isHealth: 1
+  <Type>k__BackingField: 0
+  <Icon>k__BackingField: {fileID: -1734544257, guid: 530e8939c2b529846a64fcf2669ca97e, type: 3}
+  <Offset>k__BackingField: {x: 4, y: -2, z: 0}
+  <Colorable>k__BackingField: 1
+  <IsHealth>k__BackingField: 1

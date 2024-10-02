@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f5ba4541a46fcc409b6ae392cb555c3, type: 3}
   m_Name: BootsS 25
   m_EditorClassIdentifier: 
-  _type: 7
-  _icon: {fileID: -366963924, guid: 7731f6677c3486848bf9b6968072098b, type: 3}
-  _colorable: 0
-  _offset: {x: -12, y: -26, z: 0}
-  _path: Boots/S
+  <Type>k__BackingField: 7
+  <Icon>k__BackingField: {fileID: -366963924, guid: 7731f6677c3486848bf9b6968072098b, type: 3}
+  <Offset>k__BackingField: {x: -12, y: -26, z: 0}
+  <Path>k__BackingField: Boots/S
+  <Colorable>k__BackingField: 0

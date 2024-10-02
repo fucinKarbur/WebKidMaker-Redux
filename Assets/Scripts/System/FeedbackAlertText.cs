@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using WKMR.System;
@@ -36,7 +34,7 @@ namespace WKMR
 
         private void ChangeText()
         {
-            Debug.Log("change text");
+            //Debug.Log("change text");
 
             switch (_text.text)
             {

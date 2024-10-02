@@ -9,32 +9,27 @@ namespace WKMR.Coloring
         [SerializeField] private GameObject[] _variants;
 
         private Color _color;
+        private GameObject _currentVariant;
 
         public event Action<Color> ColorSelected;
 
         private void OnEnable()
         {
             _color = Color.white;
-
-            var palette = _variants[UnityEngine.Random.Range(0, _variants.Length)];
-            palette.SetActive(true);
+            SetPaletteVariant();
         }
 
-        private void OnDisable()
+        private void SetPaletteVariant()
         {
-            ColorSelected = null;
-            
+            _currentVariant = _variants[UnityEngine.Random.Range(0, _variants.Length)];
+
             foreach (var variant in _variants)
-                variant.SetActive(false);
+                variant.SetActive(variant == _currentVariant);
         }
 
         public void OnDeselect(BaseEventData eventData) => Deselect(eventData as PointerEventData);
 
-        public void GetColor(Color color)
-        {
-            _color = color;
-            Disable();
-        }
+        public void SetColor(Color color) => _color = color == null ? Color.white : color;
 
         private void Disable()
         {
@@ -44,10 +39,16 @@ namespace WKMR.Coloring
 
         private void Deselect(PointerEventData eventData)
         {
-            if (eventData.pointerEnter.TryGetComponent(out PaletteColor color))
-                GetColor(color.Color);
-            else
+            if (eventData == null || eventData.pointerEnter == null || !TryGetColor(eventData, out var color))
+            {
                 Disable();
+                return;
+            }
+
+            SetColor(color.Color);
+            Disable();
         }
+
+        private bool TryGetColor(PointerEventData eventData, out PaletteColor color) => eventData.pointerEnter.TryGetComponent(out color);
     }
 }

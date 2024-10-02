@@ -1,14 +1,11 @@
-using System;
-using System.Linq;
 using UnityEngine;
-using UnityEngine.UI;
 
 namespace WKMR
 {
     //[RequireComponent(typeof(Image))]
-    public class ItemTemplate : MonoBehaviour
+    /*public class ItemTemplate : MonoBehaviour
     {
-        /* public Image Image { get; private set; }
+         public Image Image { get; private set; }
         public ItemData Item { get; private set; }
 
         private void Awake() => Image = GetComponent<Image>();
@@ -28,6 +25,6 @@ namespace WKMR
 
         public virtual void SetColor(Color color) => Image.color = color;
 
-        public void GetItem(ItemData data) => Item = data; */
-    }
+        public void GetItem(ItemData data) => Item = data; 
+    }*/
 }

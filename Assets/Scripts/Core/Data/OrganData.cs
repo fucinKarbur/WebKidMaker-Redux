@@ -1,3 +1,4 @@
+using UnityEditor;
 using UnityEngine;
 
 namespace WKMR
@@ -5,16 +6,11 @@ namespace WKMR
     [CreateAssetMenu(fileName = "Organ", menuName = "OrganData", order = 3)]
     public class OrganData : ScriptableObject
     {
-        [SerializeField] private OrganType _type;
-        [SerializeField] private Sprite _icon;
-        [SerializeField] private Vector3 _offset;
-        [SerializeField] private bool _colorable;
-        [SerializeField] private bool _isHealth;
 
-        public OrganType Type => _type;
-        public Sprite Icon => _icon;
-        public Vector3 Offset => _offset;
-        public bool Colorable => _colorable;
-        public bool IsHealth => _isHealth;
+        [field: SerializeField] public OrganType Type { get; private set; }
+        [field: SerializeField] public Sprite Icon { get; private set; }
+        [field: SerializeField] public Vector3 Offset { get; private set; }
+        [field: SerializeField] public bool Colorable { get; private set; }
+        [field: SerializeField] public bool IsHealth { get; private set; }
     }
 }

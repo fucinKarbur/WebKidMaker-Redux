@@ -1,8 +1,3 @@
-using UnityEngine;
-using UnityEngine.EventSystems;
-using WKMR.Coloring;
-using Zenject;
-
 namespace WKMR
 {
     public class PinButton /* : ItemButton */
