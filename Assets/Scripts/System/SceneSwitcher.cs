@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using WKMR.System;
@@ -34,9 +32,15 @@ namespace WKMR
         private void LoadScene(int index)
         {
             if (_screen != null)
+            {
+                _screen.gameObject.SetActive(true);
                 _screen.LoadScene(index);
+            }
             else
+            {
+                Debug.Log("Loading screen not found");
                 SceneManager.LoadScene(index);
+            }
         }
     }
 }

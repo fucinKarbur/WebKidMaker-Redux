@@ -14,20 +14,17 @@ namespace WKMR
                 Destroy(gameObject);
         }
 
-        public void OnTimerStart()
-        {
-            _system.enabled = false;
-        }
+        public void OnTimerStart() => _system.enabled = false;
 
         public void OnAdStart()
         {
-            AudioListener.volume = 0;
+            AudioListener.pause = true;
             _system.enabled = false;
         }
 
         public void OnAdClose()
         {
-            AudioListener.volume = 1;
+            AudioListener.pause = false;
             _system.enabled = true;
         }
     }

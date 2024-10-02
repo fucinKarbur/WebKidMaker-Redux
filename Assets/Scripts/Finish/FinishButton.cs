@@ -1,6 +1,5 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using WKMR.Clothing;
 using WKMR.System;
 using YG;
 

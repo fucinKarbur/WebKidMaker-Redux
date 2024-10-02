@@ -1,8 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using WKMR.System;
+
+/// <summary>
+/// чек где вообще используется этот класс
+/// 
+/// почему обновление текста в апдейте??
+/// 
+/// и исправь наконец эту тему с еррор тайп, хоть таблицы прикрути с переводом, 
+/// но это супер неудобно, в коде каждлую ошибку прописывать
+/// </summary>
 
 namespace WKMR
 {
@@ -27,7 +34,7 @@ namespace WKMR
 
         private void ChangeText()
         {
-            Debug.Log("change text");
+            //Debug.Log("change text");
 
             switch (_text.text)
             {

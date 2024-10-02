@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using YG;
 
@@ -19,6 +17,9 @@ namespace WKMR
 
         private void LoadKids()
         {
+            if (_kids != null)
+                return;
+
             _kids = new KidData[YandexGame.savesData.Kids.Length];
 
             if (TryToLoad())

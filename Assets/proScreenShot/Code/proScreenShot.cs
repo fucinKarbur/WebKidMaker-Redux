@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
 using System.Collections;
-using System.IO;
 using System.Collections.Generic;
 
 public class proScreenShot : MonoBehaviour {
@@ -379,7 +378,7 @@ public class proScreenShot : MonoBehaviour {
 
 		ClearSavedScreenShotList();
 		
-		#if UNITY_EDITOR
+		/* #if UNITY_EDITOR
 		System.IO.DirectoryInfo downloadedMessageInfo = new DirectoryInfo(Application.dataPath+"/MyScreenShots");
 
 		foreach (FileInfo file in downloadedMessageInfo.GetFiles())
@@ -394,7 +393,7 @@ public class proScreenShot : MonoBehaviour {
 
 		UnityEditor.AssetDatabase.SaveAssets();
 		UnityEditor.AssetDatabase.Refresh();
-		#endif
+		#endif */
 	}
 
 	public string GetPathOfLastScreenShot()

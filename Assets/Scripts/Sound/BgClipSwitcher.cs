@@ -5,7 +5,6 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using YG;
-using DG.Tweening;
 
 namespace WKMR
 {

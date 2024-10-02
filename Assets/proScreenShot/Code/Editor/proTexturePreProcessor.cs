@@ -3,7 +3,8 @@ using UnityEditor;
 
 public class proTexturePreProcessor : AssetPostprocessor
 {
-	void OnPreprocessTexture()
+    [System.Obsolete]
+    void OnPreprocessTexture()
 	{
 		if(assetPath.Contains(proCore.latestScreenshotPath)&&proCore.latestScreenshotPath!="")
 		{

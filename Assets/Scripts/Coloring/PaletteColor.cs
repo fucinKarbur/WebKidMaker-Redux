@@ -19,10 +19,13 @@ namespace WKMR.Coloring
             _button = GetComponent<Button>();
         }
 
-        private void OnEnable() => _button.onClick.AddListener(SendColor);
+        private void Start() => _button.onClick.AddListener(SendColor);
 
-        private void OnDisable() => _button.onClick.RemoveListener(SendColor);
+        private void OnDestroy() => _button.onClick.RemoveListener(SendColor);
 
-        public void SendColor() => _palette.GetColor(Color);
+/// <summary>
+/// плохо, что цвет палитры вызывает у палитры смену цвета
+/// </summary>
+        public void SendColor() => _palette.SetColor(Color);
     }
 }
